@@ -32,7 +32,7 @@
       height: 50px;
       position: relative;
     }
-    .activity_main .top-bar__icon{
+    .activity_main .top-bar__icon {
       width: 35px;
       height: 35px;
       position: absolute;
@@ -74,7 +74,7 @@
     }
     .activity_main .tab-bar__btn.active .tab-bar__btn-title span {}
 
-    .activity_main .container{
+    .activity_main .container {
       width: 100%;
     }
   </style>
@@ -104,32 +104,34 @@
     </header>
     <main>
       <div class="container">
-        
+
       </div>
     </main>
   </div>
-  
-  
-  
+
+
+
   <script type="text/javascript" charset="utf-8">
-    
+
     let topBarBtn = document.querySelectorAll(".top-bar__btn");
     let tabBarBtn = document.querySelectorAll(".tab-bar__btn");
-    
-    topBarBtn.forEach((btn)=>{
-      btn.addEventListener("click", ()=>{
+
+    topBarBtn.forEach((btn)=> {
+      btn.addEventListener("click", ()=> {
         location.reload();
       })
     });
-    tabBarBtn.forEach((btn)=>{
-      btn.addEventListener("click", ()=>{
-        tabBarBtn.forEach((btn)=>{
-          btn.classList.remove("active");
-        });
-        btn.classList.add("active");
+    tabBarBtn.forEach((btn)=> {
+      btn.addEventListener("click", ()=> {
+        if (!btn.classList.contains("active")) {
+          tabBarBtn.forEach((btn)=> {
+            btn.classList.remove("active");
+          });
+          btn.classList.add("active");
+        } else {};
       });
     });
-    
+
   </script>
 </body>
 </html>
