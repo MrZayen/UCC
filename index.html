@@ -74,9 +74,8 @@
     }
     .activity_main .tab-bar__btn.active .tab-bar__btn-title span {}
 
-    .activity_main main {
+    .activity_main .container{
       width: 100%;
-      height: 200vh;
     }
   </style>
 </head>
@@ -84,7 +83,7 @@
   <div class="activity_main">
     <header>
       <div class="top-bar">
-        <div class="top-bar__icon">
+        <div class="top-bar__icon top-bar__btn">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
             <path d="M17.523,15.342c-0.552,0-1-0.447-1-0.999s0.447-1,0.999-1c0.552,0,1,0.447,1,0.999  C18.522,14.894,18.075,15.341,17.523,15.342 M6.477,15.342c-0.552,0-1-0.447-1-0.999c0-0.552,0.447-1,0.999-1  c0.552,0,1,0.447,1,0.999C7.476,14.894,7.029,15.341,6.477,15.342 M17.881,9.322l1.997-3.459c0.115-0.199,0.047-0.453-0.152-0.568  c-0.199-0.115-0.453-0.047-0.568,0.152l0,0l-2.022,3.503C15.59,8.244,13.853,7.851,12,7.851S8.41,8.244,6.863,8.949L4.841,5.447  C4.726,5.248,4.472,5.18,4.273,5.294C4.075,5.409,4.006,5.663,4.121,5.862l0,0l1.997,3.46c-3.43,1.865-5.775,5.337-6.119,9.44h24  C23.656,14.659,21.311,11.187,17.881,9.322" />
           </svg>
@@ -104,8 +103,33 @@
       </div>
     </header>
     <main>
-       <a href="https://www.google.com">Click!</a>
+      <div class="container">
+        
+      </div>
     </main>
   </div>
+  
+  
+  
+  <script type="text/javascript" charset="utf-8">
+    
+    let topBarBtn = document.querySelectorAll(".top-bar__btn");
+    let tabBarBtn = document.querySelectorAll(".tab-bar__btn");
+    
+    topBarBtn.forEach((btn)=>{
+      btn.addEventListener("click", ()=>{
+        location.reload();
+      })
+    });
+    tabBarBtn.forEach((btn)=>{
+      btn.addEventListener("click", ()=>{
+        tabBarBtn.forEach((btn)=>{
+          btn.classList.remove("active");
+        });
+        btn.classList.add("active");
+      });
+    });
+    
+  </script>
 </body>
 </html>
