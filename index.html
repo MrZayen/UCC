@@ -90,7 +90,7 @@
       display: block;
     }
     .activity_main .container .fragment--collections{
-      height: 200vh;
+      height: 300vh;
       background-color: red;
     }
     .activity_main .container .fragment--expanses{
@@ -138,8 +138,10 @@
 
   <script type="text/javascript" charset="utf-8">
 
+    let activityMain = document.querySelectorAll(".activity_main")[0];
     let topBarBtn = document.querySelectorAll(".top-bar__btn");
     let tabBarBtn = document.querySelectorAll(".tab-bar__btn");
+    let container = document.querySelectorAll(".container")[0];
     let tabFragment = document.querySelectorAll(".fragment");
 
     topBarBtn.forEach((btn)=> {
@@ -162,7 +164,10 @@
         } else {};
       });
     });
-
+    
+    window.ondblclick = ()=>{
+      console.log(activityMain.scrollTop)
+    }
   </script>
 </body>
 </html>
