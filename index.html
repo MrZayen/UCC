@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>United Cultural Club</title>
-    <link rel="stylesheet" href="style.css">
-    <style type="text/css" media="all">
-      body{
-        margin: 0;
-        padding: 0;
-        font-family: Sans-Serif;
-      }
-      
-    </style>
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>United Cultural Club</title>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css" media="all">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Sans-Serif;
+      overflow-y: hidden;
+    }
+    .activity_main {
+      width: 100%;
+      height: 100vh;
+      overflow: scroll;
+    }
+    .activity_main::-webkit-scrollbar {
+      display: none;
+    }
+    .test {
+      width: 10px;
+      height: 400vh;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="activity_main">
+    <div class="test">
+
+    </div>
+  </div>
+</body>
 </html>
