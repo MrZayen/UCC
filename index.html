@@ -74,8 +74,20 @@
     }
     .activity_main .tab-bar__btn.active .tab-bar__btn-title span {}
 
+    .activity_main main {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
     .activity_main .container {
       width: 100%;
+    }
+    .activity_main .container .fragment {
+      width: 100%;
+      display: none;
+    }
+    .activity_main .container .fragment.show {
+      display: block;
     }
   </style>
 </head>
@@ -104,7 +116,12 @@
     </header>
     <main>
       <div class="container">
-
+        <div class="fragment fragment--collections show">
+          d
+        </div>
+        <div class="fragment fragmen--expanses">
+          dg
+        </div>
       </div>
     </main>
   </div>
@@ -115,19 +132,25 @@
 
     let topBarBtn = document.querySelectorAll(".top-bar__btn");
     let tabBarBtn = document.querySelectorAll(".tab-bar__btn");
+    let tabFragment = document.querySelectorAll(".fragment");
 
     topBarBtn.forEach((btn)=> {
       btn.addEventListener("click", ()=> {
         location.reload();
       })
     });
-    tabBarBtn.forEach((btn)=> {
+
+    tabBarBtn.forEach((btn, index)=> {
       btn.addEventListener("click", ()=> {
         if (!btn.classList.contains("active")) {
           tabBarBtn.forEach((btn)=> {
             btn.classList.remove("active");
           });
           btn.classList.add("active");
+          tabFragment.forEach((fragment)=> {
+            fragment.classList.remove("show");
+          });
+          tabFragment[index].classList.add("show");
         } else {};
       });
     });
