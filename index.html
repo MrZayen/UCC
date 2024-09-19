@@ -91,11 +91,9 @@
     }
     .activity_main .container .fragment--collections {
       height: 200vh;
-      background-color: red;
     }
     .activity_main .container .fragment--expanses {
       height: 200vh;
-      background-color: green;
     }
   </style>
 </head>
@@ -128,7 +126,7 @@
 
         </div>
         <div class="fragment fragment--expanses">
-<a href="https://www.google.com">https://www.google.com</a>
+
         </div>
       </div>
     </main>
@@ -176,7 +174,7 @@
                 sessionStorage.setItem("collectionsScrollTop", 0);
               }
               sessionStorage.setItem("activeTabBtn", "collectionsTabBtn");
-              restoreState();
+              restoreState(false);
               break;
             case 1:
               let expansesScrollTop = sessionStorage.getItem("expansesScrollTop");
@@ -184,7 +182,7 @@
                 sessionStorage.setItem("expansesScrollTop", 0);
               }
               sessionStorage.setItem("activeTabBtn", "expansesTabBtn");
-              restoreState();
+              restoreState(false);
               break;
           };
 
@@ -200,6 +198,7 @@
         sessionStorage.setItem("expansesScrollTop", e.target.scrollTop);
       };
     });
+    
     restoreState(true);
 
     function restoreState(isFirstTime) {
