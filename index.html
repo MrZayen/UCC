@@ -91,30 +91,29 @@
     .activity_main .container .fragment.show {
       display: block;
     }
-    
-    
-    .card{
+
+
+    .card {
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
     }
-    .card__header{
+    .card__header {
       width: 100%;
       padding: 15px;
       box-sizing: border-box;
       display: flex;
     }
-    .card .header__logo{
+    .card .header__logo {
       width: 50px;
       height: 50px;
       border-radius: 100%;
-      background-color: #e0e0e0;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
     }
-    .card .header__details{
+    .card .header__details {
       flex: 1;
       height: 50px;
       padding-left: 10px;
@@ -122,18 +121,18 @@
       flex-direction: column;
       justify-content: center;
     }
-    .card__body{
+    .card__body {
       width: 100%;
       padding: 0 15px;
       box-sizing: border-box;
       display: flex;
     }
-    .card__space{
+    .card__space {
       width: 50px;
       min-height: 100px;
       position: relative;
     }
-    .card__space::after{
+    .card__space::after {
       content: "";
       width: 3px;
       height: 100%;
@@ -143,14 +142,20 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
-    .card:last-child .card__space::after{
+    .card:last-child .card__space::after {
       display: none;
     }
-    .card__details{
+    .card__details {
       flex: 1;
       padding-left: 10px;
     }
-    .card__details .sub-card{
+    .card__details .details{
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      background-color: #e0e0e0;
+    }
+    .sub-card{
       width: 100%;
     }
     .sub-card__header{
@@ -162,10 +167,6 @@
       height: 50px;
       border-radius: 100%;
       background-color: #e0e0e0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
     }
     .sub-card__header__details{
       flex: 1;
@@ -186,7 +187,7 @@
       height: 100%;
       position: relative;
     }
-    .sub-card__space::after{
+    .sub-card__space::after {
       content: "";
       width: 3px;
       height: 100%;
@@ -195,12 +196,6 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-    }
-    .sub-card.show .sub-card__space::after{
-      display: block;
-    }
-    .card__details .card__footer{
-      width: 100%;
     }
   </style>
 </head>
@@ -231,241 +226,6 @@
       <div class="container">
         <div class="fragment fragment--collections show">
           <div class="default-collection"></div>
-          <div class="card">
-            <div class="card__header">
-              <div class="header__logo">
-                <span>S</span>
-              </div>
-              <div class="header__details">
-                <span>Title</span>
-                <span>Description</span>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__space"></div>
-              <div class="card__details">
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div>
-                </div>
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div> -->
-                </div>
-                <div class="card__footer">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__header">
-              <div class="header__logo">
-                <span>S</span>
-              </div>
-              <div class="header__details">
-                <span>Title</span>
-                <span>Description</span>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__space"></div>
-              <div class="card__details">
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div>
-                </div>
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div> -->
-                </div>
-                <div class="card__footer">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__header">
-              <div class="header__logo">
-                <span>S</span>
-              </div>
-              <div class="header__details">
-                <span>Title</span>
-                <span>Description</span>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__space"></div>
-              <div class="card__details">
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div>
-                </div>
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div> -->
-                </div>
-                <div class="card__footer">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__header">
-              <div class="header__logo">
-                <span>S</span>
-              </div>
-              <div class="header__details">
-                <span>Title</span>
-                <span>Description</span>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__space"></div>
-              <div class="card__details">
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div>
-                </div>
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div> -->
-                </div>
-                <div class="card__footer">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__header">
-              <div class="header__logo">
-                <span>S</span>
-              </div>
-              <div class="header__details">
-                <span>Title</span>
-                <span>Description</span>
-              </div>
-            </div>
-            <div class="card__body">
-              <div class="card__space"></div>
-              <div class="card__details">
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div>
-                </div>
-                <div class="sub-card">
-                  <div class="sub-card__header">
-                    <div class="sub-card__header__logo">
-                      <span>S</span>
-                    </div>
-                    <div class="sub-card__header__details">
-                      <span>Title</span>
-                      <span>Description</span>
-                    </div>
-                  </div>
-                  <!-- <div class="sub-card__body">
-                    <div class="sub-card__space"></div>
-                  </div> -->
-                </div>
-                <div class="card__footer">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="fragment fragment--expanses">
           <div class="default-expanse"></div>
@@ -560,16 +320,79 @@
       }
     }
   </script>
-  
+
   <script type="module" charset="utf-8">
     import collections from "./scripts/collections.js";
     import expenses from "./scripts/expenses.js";
-    
-    
-    
-    
-    
+
+    let defaultCollection = document.querySelector(".default-collection");
+    let defaultExpanse = document.querySelector(".default-expanse");
+
+    add("collections", collections)
+
+    function add(type, details) {
+      details.forEach((details)=> {
+
+        const div = document.createElement("div");
+
+        if (type === "collections") {
+          details.collections.forEach((collections)=> {
+            let subCard = document.createElement("div");
+            subCard.classList.add("sub-card");
+            subCard.innerHTML = `<div class="sub-card__header">
+                                   <div class="sub-card__header__logo"></div>
+                                   <div class="sub-card__header__details">
+                                     <div class="sub-card__header__title">
+                                       <span>Title</span>
+                                     </div>
+                                     <div class="sub-card__header__title">
+                                       <span>Description</span>
+                                     </div>
+                                   </div>
+                                 </div>
+                                 <div class="sub-card__body">
+                                   <div class="sub-card__space"></div>
+                                 </div>`;
+            div.appendChild(subCard);
+          });
+        } else if (type === "expenses") {
+          details.expenses.forEach((expenses)=> {
+            let subCard = document.createElement("div");
+            subCard.classList.add("#");
+            subCard.innerHTML = ``;
+            div.appendChild(subCard);
+          });
+        };
+
+        const card = `<div class="card">
+                        <div class="card__header">
+                          <div class="header__logo">
+                          </div>
+                          <div class="header__details">
+                            <div class="header__title">
+                              <span>Title</span>
+                            </div>
+                            <div class="header__description">
+                              <span>Description</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__body">
+                          <div class="card__space"></div>
+                          <div class="card__details">
+                            <div class="details">${div.innerHTML}</div>
+                          </div>
+                        </div>
+                      </div>`;
+
+        if (type === "collections") {
+          defaultCollection.insertAdjacentHTML("afterEnd", card);
+        } else if (type === "expenses") {
+          defaultExpanse.insertAdjacentHTML("afterEnd", card);
+        };
+      });
+    }
   </script>
-  
+
 </body>
 </html>
