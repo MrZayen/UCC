@@ -12,6 +12,25 @@ const collections = [
                        getInformation: {getTitle: "Road Collections", getAmount: 500}
                      }],
     getAmount: 700
-  }];
+  },
+  {
+    getId: 20092024,
+    getLogo: "S",
+    getLogoInfo: {getType: "text", getColor: colors[1]},
+    getInformation: {getDay: "Sunday", getDate: "20 Sep, 2024"},
+    getCollections: [{
+                       getClasses: ["#","#","#"],
+                       getLogo: "./android.png",
+                       getLogoInfo: {getType: "image"},
+                       getInformation: {getTitle: "Road Collections", getAmount: 500}
+                     },{
+                       getClasses: ["#","#","remove"],
+                       getLogo: "./android.png",
+                       getLogoInfo: {getType: "image"},
+                       getInformation: {getTitle: "Road Collections", getAmount: 500}
+                     }],
+    getAmount: 700
+  }
+  ];
 
 export default collections;
