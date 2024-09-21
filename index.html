@@ -113,6 +113,16 @@
       align-items: center;
       overflow: hidden;
     }
+    .card .header__logo img{
+      width: 60%;
+    }
+    .card .header__logo span{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .card .header__details {
       flex: 1;
       height: 50px;
@@ -153,7 +163,8 @@
       width: 100%;
       padding: 15px;
       box-sizing: border-box;
-      background-color: #e0e0e0;
+      border-radius: 10px;
+      background-color: #efefef;
     }
     .sub-card{
       width: 100%;
@@ -166,7 +177,20 @@
       width: 50px;
       height: 50px;
       border-radius: 100%;
-      background-color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .sub-card__header__logo img{
+      width: 60%;
+    }
+    .sub-card__header__logo span{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .sub-card__header__details{
       flex: 1;
@@ -328,52 +352,70 @@
     let defaultCollection = document.querySelector(".default-collection");
     let defaultExpanse = document.querySelector(".default-expanse");
 
-    add("collections", collections)
+    add("collections", collections);
+    add("expenses", expenses)
+    
+    document.querySelectorAll(".remove").forEach((item)=>{
+      item.remove();
+    })
 
-    function add(type, details) {
-      details.forEach((details)=> {
-
-        const div = document.createElement("div");
-
+    function add(type, cardData) {
+      cardData.forEach((cardData)=> {
+        
+        let subCardData;
+        
         if (type === "collections") {
-          details.collections.forEach((collections)=> {
+          subCardData = cardData.getCollections;
+        } else if (type === "expenses") {
+          subCardData = cardData.getExpenses;
+        };
+        
+        const div = document.createElement("div");
+        
+        subCardData.forEach((subCardData)=> {
             let subCard = document.createElement("div");
             subCard.classList.add("sub-card");
+            
+            let subCardLogo;
+            if(subCardData.getLogoInfo.getType === "image"){
+              subCardLogo = `<img src="${subCardData.getLogo}"/>`;
+            }else if(subCardData.getLogoInfo.getType === "text"){
+              subCardLogo = `<span>${subCardData.getLogo}</span>`;
+            };
+            
             subCard.innerHTML = `<div class="sub-card__header">
-                                   <div class="sub-card__header__logo"></div>
+                                   <div class="sub-card__header__logo">${subCardLogo}</div>
                                    <div class="sub-card__header__details">
                                      <div class="sub-card__header__title">
-                                       <span>Title</span>
+                                       <span>${subCardData.getInformation.getTitle}</span>
                                      </div>
                                      <div class="sub-card__header__title">
-                                       <span>Description</span>
+                                       <span>${subCardData.getInformation.getAmount}</span>
                                      </div>
                                    </div>
                                  </div>
-                                 <div class="sub-card__body">
+                                 <div class="sub-card__body ${subCardData.getClasses[2]}">
                                    <div class="sub-card__space"></div>
                                  </div>`;
             div.appendChild(subCard);
           });
-        } else if (type === "expenses") {
-          details.expenses.forEach((expenses)=> {
-            let subCard = document.createElement("div");
-            subCard.classList.add("#");
-            subCard.innerHTML = ``;
-            div.appendChild(subCard);
-          });
-        };
-
+        
+        let cardLogo;
+            if(cardData.getLogoInfo.getType === "image"){
+              cardLogo = `<img src="${cardData.getLogo}"/>`;
+            }else if(cardData.getLogoInfo.getType === "text"){
+              cardLogo = `<span style="background-color:${cardData.getLogoInfo.getColor}">${cardData.getLogo}</span>`;
+            };
+        
         const card = `<div class="card">
                         <div class="card__header">
-                          <div class="header__logo">
-                          </div>
+                          <div class="header__logo">${cardLogo}</div>
                           <div class="header__details">
                             <div class="header__title">
-                              <span>Title</span>
+                              <span>${cardData.getInformation.getDay}</span>
                             </div>
                             <div class="header__description">
-                              <span>Description</span>
+                              <span>${cardData.getInformation.getDate}</span>
                             </div>
                           </div>
                         </div>
