@@ -35,7 +35,7 @@ const collections = [
       getClasses: ["#","#","remove"],
       getLogo: "./images/ic_default.jpg",
       getLogoInfo: {getType: "image"},
-      getInformation: {getTitle: "Gorur Collection", getAmount: "₹50"}
+      getInformation: {getTitle: "Cow Collection", getAmount: "₹50"}
     }],
     getAmount: "₹50"
   }
