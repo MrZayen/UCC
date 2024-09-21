@@ -7,6 +7,12 @@
   <title>United Cultural Club</title>
   <link rel="stylesheet" href="style.css">
   <style type="text/css" media="all">
+    :root{
+      --color: #000000;
+      --backgroundColor: #FFFFFF;
+      --surfaceColor: #F5F5F5;
+      --avatarColor: #FFFFFF;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -15,6 +21,9 @@
     .activity_main {
       width: 100%;
       height: 100vh;
+      color: var(--color);
+      fill: var(--color);
+      background-color: var(--backgroundColor);
       overflow: scroll;
       scroll-behavior: smooth;
     }
@@ -22,7 +31,7 @@
       width: 100%;
       max-width: 600px;
       height: 100px;
-      background-color: #fff;
+      background-color: var(--backgroundColor);
       margin: 0 auto;
       position: sticky;
       top: -50px;
@@ -70,7 +79,7 @@
       width: 100%;
       height: 4px;
       border-radius: 100px;
-      background-color: #000;
+      background-color: var(--color);
       position: absolute;
       bottom: 0;
     }
@@ -122,6 +131,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      color: var(--avatarColor);
+      font-size: 25px;
+      font-weight: 450;
     }
     .card .header__details {
       flex: 1;
@@ -146,7 +158,7 @@
       content: "";
       width: 3px;
       height: 100%;
-      background-color: #000;
+      background-color: var(--color);
       position: absolute;
       left: 50%;
       top: 50%;
@@ -164,7 +176,7 @@
       padding: 15px;
       box-sizing: border-box;
       border-radius: 10px;
-      background-color: #efefef;
+      background-color: var(--surfaceColor);
     }
     .sub-card{
       width: 100%;
@@ -191,6 +203,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      color: var(--avatarColor);
+      font-size: 25px;
+      font-weight: 450;
     }
     .sub-card__header__details{
       flex: 1;
@@ -215,16 +230,20 @@
       content: "";
       width: 3px;
       height: 100%;
-      background-color: #000;
+      background-color: var(--color);
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
     
+    
     @media (prefers-color-scheme: dark) {
-      body{
-        background-color: red;
+      :root{
+        --color: #FFFFFF;
+        --backgroundColor: #000000;
+        --surfaceColor: #252525;
+        --avatarColor: #000000;
       }
     }
   </style>
