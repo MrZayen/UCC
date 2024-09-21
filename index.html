@@ -11,6 +11,7 @@
       --color: #000000;
       --backgroundColor: #FFFFFF;
       --surfaceColor: #F5F5F5;
+      --deviderColor: #E8E8E8;
       --avatarColor: #FFFFFF;
     }
     body {
@@ -33,6 +34,7 @@
       height: 100px;
       background-color: var(--backgroundColor);
       margin: 0 auto;
+      border-bottom: 1px solid var(--deviderColor);
       position: sticky;
       top: -50px;
       user-select: none;
@@ -123,7 +125,7 @@
       overflow: hidden;
     }
     .card .header__logo img{
-      width: 60%;
+      width: 100%;
     }
     .card .header__logo span{
       width: 100%;
@@ -195,7 +197,7 @@
       overflow: hidden;
     }
     .sub-card__header__logo img{
-      width: 60%;
+      width: 100%;
     }
     .sub-card__header__logo span{
       width: 100%;
@@ -243,7 +245,8 @@
         --color: #FFFFFF;
         --backgroundColor: #000000;
         --surfaceColor: #252525;
-        --avatarColor: #000000;
+        --deviderColor: #282828;
+        --avatarColor: #000000 
       }
     }
   </style>
@@ -405,7 +408,7 @@
             if(subCardData.getLogoInfo.getType === "image"){
               subCardLogo = `<img src="${subCardData.getLogo}"/>`;
             }else if(subCardData.getLogoInfo.getType === "text"){
-              subCardLogo = `<span>${subCardData.getLogo}</span>`;
+              subCardLogo = `<span style="background-color:${subCardData.getLogoInfo.getColor}">${subCardData.getLogo}</span>`;
             };
             
             subCard.innerHTML = `<div class="sub-card__header">
