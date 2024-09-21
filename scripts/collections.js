@@ -45,16 +45,16 @@ const collections = [
     getLogoInfo: {getType: "text", getColor: colors[7]},
     getInformation: {getDay: "Sunday", getDate: "15 Sep, 2024"},
     getCollections: [{
-      getClasses: ["#","#","remove"],
-      getLogo: "./images/ic_default.jpg",
-      getLogoInfo: {getType: "image"},
-      getInformation: {getTitle: "Village Collection", getAmount: "₹300"}
-    },
-    {
       getClasses: ["#","#","#"],
       getLogo: "./images/ic_default.jpg",
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Cow Collection", getAmount: "₹800"}
+    },
+    {
+      getClasses: ["#","#","remove"],
+      getLogo: "./images/ic_default.jpg",
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Village Collection", getAmount: "₹300"}
     }],
     getAmount: "₹1100"
   }
