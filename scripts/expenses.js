@@ -14,7 +14,7 @@ const expenses = [
       getClasses: ["#","#","remove"],
       getLogo: images.icDefault,
       getLogoInfo: {getType: "image"},
-      getInformation: {getTitle: "", getAmount: "₹500"}
+      getInformation: {getTitle: "Bill Book Earnest", getAmount: "₹500"}
     }],
     getAmount: "₹600"
   }];
