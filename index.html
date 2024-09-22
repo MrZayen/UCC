@@ -97,7 +97,9 @@
     }
     .activity_main .container .fragment {
       width: 100%;
-      animation: transitionIn 0.7s;
+      opacity: 0;
+      transform: translateY(-4px);
+      /* animation: transitionIn 0.7s; */
       display: none;
     }
     .activity_main .container .fragment.show {
@@ -315,11 +317,13 @@
     let tabBarBtn = document.querySelectorAll(".tab-bar__btn");
     let tabFragment = document.querySelectorAll(".fragment");
     
-    window.addEventListener("load", ()=>{
-      document.querySelectorAll(".fragment").forEach((fragment)=>{
-        fragment.style.animation = "transitionIn 0.7s";
-      });
-    })
+    document.onreadystatechange = function () {
+      if (document.readyState == "complete") {
+        document.querySelectorAll(".fragment").forEach((fragment)=>{
+          fragment.style.animation = "transitionIn 0.7s forwards"
+        })
+      }
+    }
     
     let activeTabBtn = sessionStorage.getItem("activeTabBtn");
     if (activeTabBtn === null) {
