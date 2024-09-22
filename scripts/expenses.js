@@ -27,7 +27,7 @@ const expenses = [
   {
     getId: "03092024",
     getLogo: "T",
-    getLogoInfo: {getType: "text", getColor: colors[3]},
+    getLogoInfo: {getType: "text", getColor: colors[7]},
     getInformation: {getDay: "Tuesday", getDate: "3 Sep, 2024"},
     getExpenses: [{
       getClasses: ["#","#","remove"],
