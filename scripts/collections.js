@@ -1,5 +1,6 @@
 const colors = ["#FCC834","#AF5CF6", "#ED675C", "#4DCDE6", "#FF63B7", "#FA8F3D", "#5CB973", "#ED675C"];
 const images = {
+  icDefault: "./images/ic_default.jpg",
   icCow: "./images/ic_cow.jpg",
   icVillage: "./images/ic_village.jpeg"
 };
@@ -11,7 +12,7 @@ const collections = [
     getInformation: {getDay: "Thursday", getDate: "5 Sep, 2024"},
     getCollections: [{
       getClasses: ["#","#","remove"],
-      getLogo: "./images/ic_default.jpg",
+      getLogo: images.icDefault,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Remaining Amount", getAmount: "₹3500"}
     }],
@@ -24,7 +25,7 @@ const collections = [
     getInformation: {getDay: "Saturday", getDate: "7 Sep, 2024"},
     getCollections: [{
       getClasses: ["#","#","remove"],
-      getLogo: "./images/ic_default.jpg",
+      getLogo: images.icDefault,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Water Tank", getAmount: "₹5000"}
     }],
