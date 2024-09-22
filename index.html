@@ -94,13 +94,12 @@
     }
     .activity_main .container {
       width: 100%;
-      opacity: 0;
-      transform: translateY(-4px);
-      transition: 0.7s;
     }
     .activity_main .container .fragment {
       width: 100%;
+      animation: trans 0.7s;
       display: none;
+      transition: ;
     }
     .activity_main .container .fragment.show {
       display: block;
@@ -250,6 +249,15 @@
       bottom: 0;
     }
     
+    @keyframes transitionIn{
+      from{
+        opacity: 0;
+        transform: translateY(-4px);
+      }to{
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+    }
     
     @media (prefers-color-scheme: dark) {
       :root{
@@ -307,12 +315,13 @@
     let tabBarBtn = document.querySelectorAll(".tab-bar__btn");
     let tabFragment = document.querySelectorAll(".fragment");
     
-    window.addEventListener("load", ()=>{
+    /*window.addEventListener("load", ()=>{
       setTimeout( function() {
-        document.querySelector(".container").style.opacity = "1";
-        document.querySelector(".container").style.transform = "translateY(0)";
+        document.querySelectorAll(".fragment").forEach((fragment)=>{
+          fragment.style.display
+        });
       }, 100);
-    })
+    })*/
     
     let activeTabBtn = sessionStorage.getItem("activeTabBtn");
     if (activeTabBtn === null) {
