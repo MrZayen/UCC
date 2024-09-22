@@ -30,7 +30,7 @@ const expenses = [
     getLogoInfo: {getType: "text", getColor: colors[3]},
     getInformation: {getDay: "Tuesday", getDate: "3 Sep, 2024"},
     getExpenses: [{
-      getClasses: ["#","#","#"],
+      getClasses: ["#","#","remove"],
       getLogo: images.icDefault,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Idol Earnest", getAmount: "₹500"}
