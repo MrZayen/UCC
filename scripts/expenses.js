@@ -11,13 +11,13 @@ const expenses = [
     getLogoInfo: {getType: "text", getColor: colors[3]},
     getInformation: {getDay: "Monday", getDate: "2 Sep, 2024"},
     getExpenses: [{
-      getClasses: ["#","#","remove"],
+      getClasses: ["#","#","#"],
       getLogo: images.icDefault,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Bill Book Earnest", getAmount: "₹500"}
     },
     {
-      getClasses: ["#","#","#"],
+      getClasses: ["#","#","remove"],
       getLogo: images.icDefault,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Transportation Costs", getAmount: "₹100"}
