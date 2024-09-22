@@ -37,7 +37,7 @@ const collections = [
     getInformation: {getDay: "Thursday", getDate: "12 Sep, 2024"},
     getCollections: [{
       getClasses: ["#","#","remove"],
-      getLogo: "./images/ic_cow.jpg",
+      getLogo: images.icCow,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Cow Collection", getAmount: "₹50"}
     }],
@@ -50,7 +50,7 @@ const collections = [
     getInformation: {getDay: "Sunday", getDate: "15 Sep, 2024"},
     getCollections: [{
       getClasses: ["#","#","#"],
-      getLogo: "./images/ic_cow.jpg",
+      getLogo: images.icCow,
       getLogoInfo: {getType: "image"},
       getInformation: {getTitle: "Cow Collection", getAmount: "₹800"}
     },
