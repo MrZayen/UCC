@@ -123,7 +123,7 @@ const collections = [
   {
     getId: "23092024",
     getLogo: "M",
-    getLogoInfo: {getType: "text", getColor: colors[2]},
+    getLogoInfo: {getType: "text", getColor: colors[5]},
     getInformation: {getDay: "Monday", getDate: "23 Sep, 2024"},
     getCollections: [{
       getClasses: ["#","#","remove"],
