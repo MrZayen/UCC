@@ -55,7 +55,21 @@ const expenses = [
       getInformation: {getTitle: "Transportation Costs", getAmount: "₹230"}
     }],
     getAmount: "₹4200"
+  },
+  {
+    getId: "06092024",
+    getLogo: "F",
+    getLogoInfo: {getType: "text", getColor: colors[3]},
+    getInformation: {getDay: "Friday", getDate: "6 Sep, 2024"},
+    getExpenses: [{
+      getClasses: ["#","#","remove"],
+      getLogo: images.icDefault,
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Dhak Earnest", getAmount: "₹500"}
+    }],
+    getAmount: "₹500"
   }
+  
   
   ];
 export default expenses;
