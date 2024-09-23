@@ -68,6 +68,19 @@ const expenses = [
       getInformation: {getTitle: "Dhak Earnest", getAmount: "₹500"}
     }],
     getAmount: "₹500"
+  },
+  {
+    getId: "07092024",
+    getLogo: "S",
+    getLogoInfo: {getType: "text", getColor: colors[0]},
+    getInformation: {getDay: "Saturday", getDate: "7 Sep, 2024"},
+    getExpenses: [{
+      getClasses: ["#","#","remove"],
+      getLogo: images.icDefault,
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Pandal Earnest", getAmount: "₹500"}
+    }],
+    getAmount: "₹500"
   }
   
   
