@@ -36,6 +36,25 @@ const expenses = [
       getInformation: {getTitle: "Idol Earnest", getAmount: "₹500"}
     }],
     getAmount: "₹500"
+  },
+  {
+    getId: "05092024",
+    getLogo: "T",
+    getLogoInfo: {getType: "text", getColor: colors[5]},
+    getInformation: {getDay: "Thursday", getDate: "5 Sep, 2024"},
+    getExpenses: [{
+      getClasses: ["#","#","#"],
+      getLogo: images.icDefault,
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Bill Book Earnest", getAmount: "₹3970"}
+    },
+    {
+      getClasses: ["#","#","remove"],
+      getLogo: images.icDefault,
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Transportation Costs", getAmount: "₹230"}
+    }],
+    getAmount: "₹4200"
   }
   
   ];
