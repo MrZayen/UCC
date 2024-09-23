@@ -68,7 +68,6 @@ const collections = [
     getLogo: "T",
     getLogoInfo: {getType: "text", getColor: colors[0]},
     getInformation: {getDay: "Thursday", getDate: "19 Sep, 2024"},
-    getClasses: ["#","#","remove"],
     getCollections: [{
       getClasses: ["#","#","remove"],
       getLogo: images.icCow,
@@ -76,6 +75,19 @@ const collections = [
       getInformation: {getTitle: "Cow Collection", getAmount: "₹100"}
     }],
     getAmount: "₹100"
+  },
+  {
+    getId: "20092024",
+    getLogo: "F",
+    getLogoInfo: {getType: "text", getColor: colors[4]},
+    getInformation: {getDay: "Friday", getDate: "20 Sep, 2024"},
+    getCollections: [{
+      getClasses: ["#","#","remove"],
+      getLogo: images.icVillage,
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Village Collection", getAmount: "₹240"}
+    }],
+    getAmount: "₹240"
   }
   
   ];
