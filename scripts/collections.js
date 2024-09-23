@@ -88,6 +88,19 @@ const collections = [
       getInformation: {getTitle: "Village Collection", getAmount: "₹240"}
     }],
     getAmount: "₹240"
+  },
+  {
+    getId: "21092024",
+    getLogo: "S",
+    getLogoInfo: {getType: "text", getColor: colors[2]},
+    getInformation: {getDay: "Saturday", getDate: "21 Sep, 2024"},
+    getCollections: [{
+      getClasses: ["#","#","remove"],
+      getLogo: images.icVillage,
+      getLogoInfo: {getType: "image"},
+      getInformation: {getTitle: "Village Collection", getAmount: "₹650"}
+    }],
+    getAmount: "₹650"
   }
   
   ];
