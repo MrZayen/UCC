@@ -45,7 +45,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Costs", getAmount: 100}
+    getInformation: {getTitle: "Transportation Cost", getAmount: 100}
   }],
   getAmount: 600
 },
@@ -78,7 +78,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Costs", getAmount: 230}
+    getInformation: {getTitle: "Transportation Cost", getAmount: 230}
   }],
   getAmount: 4200
 },
@@ -140,6 +140,35 @@ const expenses = [{
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "Brahmin Earnest", getAmount: 200}
+  }],
+  getAmount: 200
+},
+
+{
+  getId: "12092024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
+  getInformation: {getDay: getDay[4], getDate: "12 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Manik Ghosh Certificate", getAmount: 1500}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Transportation Cost", getAmount: 150}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Sound System Earnest", getAmount: 500}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Transportation Cost", getAmount: 250}
   }],
   getAmount: 200
 }];
