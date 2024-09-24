@@ -170,7 +170,31 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "Transportation Cost", getAmount: 250}
   }],
-  getAmount: 200
+  getAmount: 2400
+},
+
+{
+  getId: "13092024",
+  getAvatar: getAvatar[5],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[5], getDate: "13 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Electric Bill", getAmount: 4550}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Others Expenses", getAmount: 200}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Transportation Cost", getAmount: 130}
+  }],
+  getAmount: 4880
 }];
 
 
