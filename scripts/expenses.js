@@ -241,7 +241,7 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[1], getDate: "16 Sep, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "Tiffin", getAmount: 50}
