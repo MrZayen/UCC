@@ -109,6 +109,25 @@ const expenses = [{
     getInformation: {getTitle: "Pandal Earnest", getAmount: 500}
   }],
   getAmount: 500
+},
+
+{
+  getId: "08092024",
+  getAvatar: getAvatar[0],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
+  getInformation: {getDay: getDay[0], getDate: "8 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Copy Pen", getAmount: 170}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Police Station Meating", getAmount: 120}
+  }],
+  getAmount: 290
 }];
 
 
