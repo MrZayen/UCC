@@ -128,6 +128,20 @@ const expenses = [{
     getInformation: {getTitle: "Police Station Meating", getAmount: 120}
   }],
   getAmount: 290
+},
+
+{
+  getId: "11092024",
+  getAvatar: getAvatar[3],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getInformation: {getDay: getDay[3], getDate: "11 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Brahmin Earnest", getAmount: 200}
+  }],
+  getAmount: 200
 }];
 
 
