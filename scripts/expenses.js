@@ -214,6 +214,25 @@ const expenses = [{
     getInformation: {getTitle: "Transportation Cost", getAmount: 120}
   }],
   getAmount: 250
+},
+
+{
+  getId: "15092024",
+  getAvatar: getAvatar[0],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[0], getDate: "13 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Permission Computer Charge", getAmount: 400}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Transportation Cost", getAmount: 115}
+  }],
+  getAmount: 515
 }];
 
 
