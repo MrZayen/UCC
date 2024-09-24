@@ -252,7 +252,7 @@ const expenses = [{
 {
   getId: "19092024",
   getAvatar: getAvatar[4],
-  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[4], getDate: "19 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
@@ -272,6 +272,20 @@ const expenses = [{
     getInformation: {getTitle: "Program Sound System", getAmount: 100}
   }],
   getAmount: 1300
+},
+
+{
+  getId: "20092024",
+  getAvatar: getAvatar[5],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[5], getDate: "20 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "School Collections", getAmount: 50}
+  }],
+  getAmount: 50
 }];
 
 
