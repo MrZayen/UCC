@@ -164,12 +164,17 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
   getInformation: {getDay: getDay[1], getDate: "23 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 1432}
+  },{
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getImage: getImages.village,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.village, getAmount: 800}
   }],
-  getAmount: 1432
+  getAmount: 2232
 }];
 
 
