@@ -247,6 +247,31 @@ const expenses = [{
     getInformation: {getTitle: "Tiffin", getAmount: 50}
   }],
   getAmount: 50
+},
+
+{
+  getId: "19092024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getInformation: {getDay: getDay[4], getDate: "19 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Orchestra Earnest", getAmount: 1000}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Rs 85,000", getAmount: 200}
+  },
+  {
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Program Sound System", getAmount: 100}
+  }],
+  getAmount: 1300
 }];
 
 
