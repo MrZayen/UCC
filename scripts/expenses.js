@@ -286,6 +286,20 @@ const expenses = [{
     getInformation: {getTitle: "School Collections", getAmount: 50}
   }],
   getAmount: 50
+},
+
+{
+  getId: "24092024",
+  getAvatar: getAvatar[2],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
+  getInformation: {getDay: getDay[2], getDate: "24 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Mona Dam Transportation Cost", getAmount: 200}
+  }],
+  getAmount: 200
 }];
 
 
