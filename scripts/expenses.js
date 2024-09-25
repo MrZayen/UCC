@@ -286,6 +286,25 @@ const expenses = [{
     getInformation: {getTitle: "Mona Dam Transportation Cost", getAmount: 200}
   }],
   getAmount: 200
+},
+
+{
+  getId: "25092024",
+  getAvatar: getAvatar[3],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[3], getDate: "25 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Program Festoon", getAmount: 300}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "Transportation Cost", getAmount: 150}
+  }],
+  getAmount: 450
 }];
 
 
