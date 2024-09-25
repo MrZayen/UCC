@@ -97,6 +97,7 @@
     }
     .activity_main .container .fragment {
       width: 100%;
+      padding-bottom: 15px;
       opacity: 0;
       transform: translateY(-4.5px);
       display: none;
@@ -104,8 +105,91 @@
     .activity_main .container .fragment.show {
       display: block;
     }
-
-
+    
+    .main-card{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 15px;
+      box-sizing: border-box;
+      user-select: none;
+    }
+    .main-card .details{
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      background-color: var(--surfaceColor);
+    }
+    .total-amount{
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .total-amount__details{
+      flex: 1;
+    }
+    .total-amount__title span{
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .total-amount__amount span{
+      font-size: 35px;
+      font-weight: bold;
+    }
+    /*.total-amount__logo{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }*/
+    .total-amount__logo .logo{
+      width: 20px;
+      height: 20px;
+      border-radius: 100px;
+    }
+    .fragment--collections .total-amount__logo .logo{
+      border: 10px solid #2FDF85;
+    }
+    .fragment--expanses .total-amount__logo .logo{
+      border: 10px solid #FF0000;
+    }
+    .remaining-amount__title span{
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .remaining-amount__amount span{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .main-card__devider{
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      display: none;
+    }
+    .main-card__devider__line{
+      width: 50px;
+      height: 30px;
+      position: relative;
+    }
+    .main-card__devider__line::after{
+      content: "";
+      width: 3px;
+      height: 100%;
+      background-color: var(--color);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
     .card {
       width: 100%;
       max-width: 600px;
@@ -297,9 +381,61 @@
     <main>
       <div class="container">
         <div class="fragment fragment--collections show">
+          <div class="main-card">
+            <div class="details">
+              <div class="total-amount">
+                <div class="total-amount__details">
+                  <div class="total-amount__title">
+                    <span>Total Donetion Collection</span>
+                  </div>
+                  <div class="total-amount__amount total-collection"></div>
+                </div>
+                <div class="total-amount__logo">
+                  <div class="logo"></div>
+                </div>
+              </div>
+              <div class="remaining-amount">
+                <div class="remaining-amount__details">
+                  <div class="remaining-amount__title">
+                    <span>Remaining Amount</span>
+                  </div>
+                  <div class="remaining-amount__amount"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-card__devider">
+            <div class="main-card__devider__line"></div>
+          </div>
           <div class="default-collection"></div>
         </div>
         <div class="fragment fragment--expanses">
+          <div class="main-card">
+            <div class="details">
+              <div class="total-amount">
+                <div class="total-amount__details">
+                  <div class="total-amount__title">
+                    <span>Total Expenses</span>
+                  </div>
+                  <div class="total-amount__amount total-expenses"></div>
+                </div>
+                <div class="total-amount__logo">
+                  <div class="logo"></div>
+                </div>
+              </div>
+              <div class="remaining-amount">
+                <div class="remaining-amount__details">
+                  <div class="remaining-amount__title">
+                    <span>Remaining Amount</span>
+                  </div>
+                  <div class="remaining-amount__amount"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-card__devider">
+            <div class="main-card__devider__line"></div>
+          </div>
           <div class="default-expanse"></div>
         </div>
       </div>
@@ -411,8 +547,10 @@
     document.querySelectorAll(".remove").forEach((item)=>{
       item.remove();
     })
-
+    
     function add(type, cardData) {
+      let totalCollection = 0,
+      totalExpanses = 0;
       cardData.forEach((cardData)=> {
         
         let subCardData;
@@ -488,11 +626,34 @@
                       </div>`;
 
         if (type === "collections") {
+          let div = document.querySelector(".total-collection");
+          div.innerHTML = `<span>₹${numberWithCommas(totalCollection+=cardData.getAmount)}</span>`;
           document.querySelector(".default-collection").insertAdjacentHTML("afterEnd", card);
+          sessionStorage.setItem("totalCollection", `${totalCollection}`)
         } else if (type === "expenses") {
+          let div = document.querySelector(".total-expenses");
+          div.innerHTML = `<span>₹${numberWithCommas(totalExpanses+=cardData.getAmount)}</span>`;
           document.querySelector(".default-expanse").insertAdjacentHTML("afterEnd", card);
+          sessionStorage.setItem("totalExpanses", `${totalExpanses}`)
         };
       });
+      
+      let div = document.querySelectorAll(".remaining-amount__amount");
+      let remainingAmount = Number(sessionStorage.getItem("totalCollection")) - Number(sessionStorage.getItem("totalExpanses"));
+      
+      if(remainingAmount >= 0){
+        div.forEach((div) => {
+          div.innerHTML = `<span>₹${numberWithCommas(remainingAmount)}</span>`;
+        });
+      }else{
+        div.forEach((div) => {
+          div.innerHTML = `<span>-₹${numberWithCommas(Math.abs(remainingAmount))}</span>`;
+        });
+      }
+    }
+    
+    function numberWithCommas(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
   </script>
 
