@@ -51,20 +51,6 @@ const expenses = [{
 },
 
 {
-  getId: "03092024",
-  getAvatar: getAvatar[2],
-  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[7]},
-  getInformation: {getDay: getDay[2], getDate: "3 Sep, 2024"},
-  getExpenses: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Idol Earnest", getAmount: 500}
-  }],
-  getAmount: 500
-},
-
-{
   getId: "05092024",
   getAvatar: getAvatar[4],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
