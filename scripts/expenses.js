@@ -170,12 +170,12 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Electric Bill", getAmount: 4550}
+    getInformation: {getTitle: "বৈদ্যুতিক বিল", getAmount: 4550}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Others Expenses", getAmount: 200}
+    getInformation: {getTitle: "জেরক্স, ফর্ম ও অন্যান্য", getAmount: 200}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
