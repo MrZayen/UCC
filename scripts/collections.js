@@ -10,9 +10,9 @@ const getImages = {
   institute: ""
 };
 const getTitle = {
-  extortion: "Cow Collection",
+  extortion: "গরু কালেকশন",
   road: "",
-  village: "Village Collection",
+  village: "পার্শ্ববর্তী এলাকা",
   institute: ""
 };
 const getBtnClasses = {
@@ -45,7 +45,7 @@ const collections = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Remaining Amount", getAmount: 3500}
+    getInformation: {getTitle: "অবশিষ্ট টাকা", getAmount: 3500}
   }],
   getAmount: 3500
 },
@@ -59,7 +59,7 @@ const collections = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Water Tank", getAmount: 5000}
+    getInformation: {getTitle: "জলের ট্যাংক", getAmount: 5000}
   }],
   getAmount: 5000
 },
