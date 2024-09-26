@@ -271,7 +271,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "School Collections", getAmount: 50}
+    getInformation: {getTitle: "স্কুলে রশিদ দেওয়ার জন্য", getAmount: 50}
   }],
   getAmount: 50
 },
