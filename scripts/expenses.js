@@ -151,7 +151,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "সাউন্ড সিস্টেম বায়না", getAmount: 500}
+    getInformation: {getTitle: "সাউন্ড সিস্টেম (১) বায়না", getAmount: 500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
@@ -257,7 +257,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Program Sound System", getAmount: 100}
+    getInformation: {getTitle: "সাউন্ড সিস্টেম (২) বায়না", getAmount: 100}
   }],
   getAmount: 1300
 },
