@@ -6,7 +6,7 @@ const getImages = {
   system: "./images/ic_default.jpg"
 };
 const getTitle = {
-  transportation: "যাতায়াত খরচ"
+  transportation: "পরিবহন খরচ"
 };
 const getBtnClasses = {
   system: "#",
@@ -66,7 +66,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 230}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 230}
   }],
   getAmount: 4200
 },
@@ -146,7 +146,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 150}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 150}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
@@ -156,7 +156,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 250}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 250}
   }],
   getAmount: 2400
 },
@@ -180,7 +180,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 130}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 130}
   }],
   getAmount: 4880
 },
