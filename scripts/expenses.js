@@ -5,7 +5,9 @@ const getDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 const getImages = {
   system: "./images/ic_default.jpg"
 };
-const getTitle = {};
+const getTitle = {
+  transportation: "যাতায়াত খরচ"
+};
 const getBtnClasses = {
   system: "#",
   //Button Active Status 
@@ -45,7 +47,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 100}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 100}
   }],
   getAmount: 600
 },
