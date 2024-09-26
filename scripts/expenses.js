@@ -125,7 +125,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Brahmin Earnest", getAmount: 200}
+    getInformation: {getTitle: "পূজার পুরোহিত বায়না", getAmount: 200}
   }],
   getAmount: 200
 },
