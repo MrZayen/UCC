@@ -78,7 +78,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Dhak Earnest", getAmount: 500}
+    getInformation: {getTitle: "পুজোর ঢাকি বায়না", getAmount: 500}
   }],
   getAmount: 500
 },
@@ -92,7 +92,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Pandal Earnest", getAmount: 500}
+    getInformation: {getTitle: "পুজোর প্যান্ডেল বায়না", getAmount: 500}
   }],
   getAmount: 500
 },
