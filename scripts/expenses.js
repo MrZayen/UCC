@@ -6,7 +6,7 @@ const getImages = {
   system: "./images/ic_default.jpg"
 };
 const getTitle = {
-  transportation: "পরিবহন খরচ"
+  transportation: "যাতায়াত খরচ"
 };
 const getBtnClasses = {
   system: "#",
@@ -199,7 +199,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 120}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 120}
   }],
   getAmount: 250
 },
@@ -218,7 +218,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "Transportation Cost", getAmount: 115}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 115}
   }],
   getAmount: 515
 },
