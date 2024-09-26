@@ -10,9 +10,9 @@ const getImages = {
   institute: ""
 };
 const getTitle = {
-  extortion: "গরু কালেকশন",
+  extortion: "গরু থেকে কালেকশন",
   road: "",
-  village: "পার্শ্ববর্তী এলাকা",
+  village: "পার্শ্ববর্তী এলাকা থেকে",
   institute: ""
 };
 const getBtnClasses = {
@@ -59,7 +59,7 @@ const collections = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "জলের ট্যাংক", getAmount: 5000}
+    getInformation: {getTitle: "জলের ট্যাংক থেকে", getAmount: 5000}
   }],
   getAmount: 5000
 },
