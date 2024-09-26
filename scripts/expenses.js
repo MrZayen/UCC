@@ -113,7 +113,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "মেখলিগঞ্জ থানার মিটিং", getAmount: 120}
+    getInformation: {getTitle: "থানার মিটিং যাতায়াত", getAmount: 120}
   }],
   getAmount: 290
 },
