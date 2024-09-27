@@ -625,7 +625,7 @@
           }else if(subCardData.getLogoInfo.getType === "txt"){
             subCardLogo = `<span style="background-color:${subCardData.getLogoInfo.getAvatarColor}">${subCardData.getAvatar}</span>`;
           }else if(subCardData.getLogoInfo.getType === "vid"){
-            subCardLogo = `<div><video src="./images/orchestra.mp4" class="sub-card__header__video" autoplay muted loop></video></div>`;
+            subCardLogo = `<div><video src="${subCardData.getVideo}" class="sub-card__header__video" autoplay muted loop></video></div>`;
           };
           
           subCard.innerHTML = `<div class="sub-card__header">
