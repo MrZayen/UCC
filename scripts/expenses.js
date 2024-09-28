@@ -4,6 +4,7 @@ const getColor = [];
 const getDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const getImages = {
   system: "./images/ic_default.jpg",
+  dhak: "./images/ic_dhak.jpg"
   pandal: "./images/ic_pandal.jpg"
 };
 const getTitle = {
@@ -33,7 +34,6 @@ p}*/
 
 
 //Place Your Code Is Here
-
 const expenses = [{
   getId: "02092024",
   getAvatar: getAvatar[1],
@@ -79,7 +79,7 @@ const expenses = [{
   getInformation: {getDay: getDay[5], getDate: "6 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.dhak,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার ঢাকি বায়না", getAmount: 500}
   }],
