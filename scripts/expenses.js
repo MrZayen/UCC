@@ -41,7 +41,7 @@ const expenses = [{
   getInformation: {getDay: getDay[1], getDate: "2 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: "./images/ic_bill-book.jpg",
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার রশিদ বায়না", getAmount: 500}
   },{
@@ -60,7 +60,7 @@ const expenses = [{
   getInformation: {getDay: getDay[4], getDate: "5 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: "./images/ic_bill-book.jpg",
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "রশিদের অবশিষ্ট টাকা", getAmount: 3970}
   },{
