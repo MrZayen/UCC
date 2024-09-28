@@ -51,7 +51,7 @@ const expenses = [{
     getInformation: {getTitle: getTitle.transportation, getAmount: 100}
   }],
   getAmount: 600
-}/*,
+},
 
 {
   getId: "05092024",
@@ -308,7 +308,7 @@ const expenses = [{
     getInformation: {getTitle: "ব্যাংকে চেক জমা দিতে", getAmount: 150}
   }],
   getAmount: 450
-}*/];
+}];
 
 
 export default expenses;
