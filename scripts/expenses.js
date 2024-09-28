@@ -5,7 +5,8 @@ const getDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 const getImages = {
   system: "./images/ic_default.jpg",
   dhak: "./images/ic_dhak.jpg",
-  pandal: "./images/ic_pandal.jpg"
+  pandal: "./images/ic_pandal.jpg",
+  transportation: "./images/ic_transportation.gif"
 };
 const getTitle = {
   transportation: "যাতায়াত খরচ"
@@ -46,7 +47,7 @@ const expenses = [{
     getInformation: {getTitle: "পূজার রশিদ বায়না", getAmount: 500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 100}
   }],
