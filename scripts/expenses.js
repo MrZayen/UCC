@@ -6,7 +6,7 @@ const getImages = {
   system: "./images/ic_default.jpg",
   dhak: "./images/ic_dhak.jpg",
   pandal: "./images/ic_pandal.jpg",
-  transportation: "./images/ic_transportation.gif"
+  transportation: "./images/ic_default"
 };
 const getTitle = {
   transportation: "যাতায়াত খরচ"
