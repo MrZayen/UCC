@@ -3,7 +3,8 @@ const getAvatarColor = ["#FCC834", "#AF5CF6", "#ED675C", "#4DCDE6", "#FF63B7", "
 const getColor = [];
 const getDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const getImages = {
-  system: "./images/ic_default.jpg"
+  system: "./images/ic_default.jpg",
+  pandal: "./images/ic_pandal.jpg"
 };
 const getTitle = {
   transportation: "যাতায়াত খরচ"
@@ -92,7 +93,7 @@ const expenses = [{
   getInformation: {getDay: getDay[6], getDate: "7 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.pandal,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার প্যান্ডেল বায়না", getAmount: 500}
   }],
