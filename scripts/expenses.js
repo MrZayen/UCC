@@ -4,7 +4,7 @@ const getColor = [];
 const getDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const getImages = {
   system: "./images/ic_default.jpg",
-  dhak: "./images/ic_dhak.jpg"
+  dhak: "./images/ic_dhak.jpg",
   pandal: "./images/ic_pandal.jpg"
 };
 const getTitle = {
