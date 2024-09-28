@@ -66,7 +66,7 @@ const expenses = [{
     getInformation: {getTitle: "রশিদের অবশিষ্ট টাকা", getAmount: 3970}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 230}
   }],
@@ -113,7 +113,7 @@ const expenses = [{
     getInformation: {getTitle: "খাতা এবং কলম", getAmount: 170}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "থানার মিটিং যাতায়াত", getAmount: 120}
   }],
@@ -146,7 +146,7 @@ const expenses = [{
     getInformation: {getTitle: "মানিক ঘোষের সার্টিফিকেট", getAmount: 1500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 150}
   },{
@@ -156,7 +156,7 @@ const expenses = [{
     getInformation: {getTitle: "সাউন্ড সিস্টেম (১) বায়না", getAmount: 500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 250}
   }],
@@ -180,7 +180,7 @@ const expenses = [{
     getInformation: {getTitle: "জেরক্স, ফর্ম ও অন্যান্য", getAmount: 200}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 130}
   }],
@@ -199,7 +199,7 @@ const expenses = [{
     getInformation: {getTitle: "পারমিশনের জেরক্স, প্রিন্ট", getAmount: 130}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 120}
   }],
@@ -218,7 +218,7 @@ const expenses = [{
     getInformation: {getTitle: "পারমিশন কম্পিউটার চার্জ", getAmount: 400}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 115}
   }],
@@ -251,7 +251,7 @@ const expenses = [{
     getInformation: {getTitle: "অর্কেস্ট্রা বায়না", getAmount: 1000}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "থানা থেকে চেক আনতে", getAmount: 200}
   },
@@ -271,7 +271,7 @@ const expenses = [{
   getInformation: {getDay: getDay[5], getDate: "20 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "স্কুলে রশিদ দেওয়ার জন্য", getAmount: 50}
   }],
@@ -285,7 +285,7 @@ const expenses = [{
   getInformation: {getDay: getDay[2], getDate: "24 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "রাস্তার কন্ডাক্টরের বাড়ি যেতে", getAmount: 200}
   }],
@@ -304,7 +304,7 @@ const expenses = [{
     getInformation: {getTitle: "অর্কেস্ট্রা ব্যানার ২ টা", getAmount: 300}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "ব্যাংকে চেক জমা দিতে", getAmount: 150}
   }],
