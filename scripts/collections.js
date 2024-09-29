@@ -11,7 +11,7 @@ const getImages = {
 };
 const getTitle = {
   extortion: "গরু থেকে কালেকশন",
-  road: "",
+  road: "রাস্তা থেকে কালেকশন",
   village: "পার্শ্ববর্তী এলাকা থেকে",
   institute: "স্কুল থেকে কালেকশন"
 };
@@ -222,6 +222,34 @@ const collections = [{
     getInformation: {getTitle: "ক্লাব ঘর থেকে ট্যাক্স", getAmount: 200}
   }],
   getAmount: 1000
+},
+
+{
+  getId: "28092024",
+  getAvatar: getAvatar[6],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getInformation: {getDay: getDay[6], getDate: "28 Sep, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getImage: getImages.village,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.village, getAmount: 300}
+  }],
+  getAmount: 300
+},
+
+{
+  getId: "29092024",
+  getAvatar: getAvatar[0],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[0], getDate: "29 Sep, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.road, getBtnClasses.road, "remove"],
+    getImage: getImages.road,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.road, getAmount: 830}
+  }],
+  getAmount: 830
 }];
 
 
