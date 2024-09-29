@@ -314,7 +314,7 @@ const expenses = [{
 {
   getId: "26092024",
   getAvatar: getAvatar[4],
-  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[7]},
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[4], getDate: "26 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
