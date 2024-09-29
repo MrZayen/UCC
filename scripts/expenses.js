@@ -246,8 +246,8 @@ const expenses = [{
   getInformation: {getDay: getDay[4], getDate: "19 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getVideo: "./videos/orchestra.mp4",
-    getLogoInfo: {getType: "vid"},
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img"},
     getInformation: {getTitle: "অর্কেস্ট্রা বায়না", getAmount: 1000}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
