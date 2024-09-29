@@ -5,7 +5,7 @@ const getDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 const getImages = {
   system: "./images/ic_default.jpg",
   dhak: "./images/ic_default.jpg",
-  pandal: "./images/ic_default.jpg",
+  pandal: "./images/ic_pandal.jpg",
   transportation: "./images/ic_default.jpg"
 };
 const getTitle = {
