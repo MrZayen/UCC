@@ -203,6 +203,25 @@ const collections = [{
     getInformation: {getTitle: getTitle.institute, getAmount: 1500}
   }],
   getAmount: 1500
+},
+
+{
+  getId: "28092024",
+  getAvatar: getAvatar[6],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
+  getInformation: {getDay: getDay[6], getDate: "28 Sep, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getImage: getImages.village,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.village, getAmount: 800}
+  },{
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "ক্লাব ঘর থাকে ট্যাক্স", getAmount: 200}
+  }],
+  getAmount: 1000
 }];
 
 
