@@ -219,7 +219,7 @@ const collections = [{
     getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "ক্লাব ঘর থাকে ট্যাক্স", getAmount: 200}
+    getInformation: {getTitle: "ক্লাব ঘর থেকে ট্যাক্স", getAmount: 200}
   }],
   getAmount: 1000
 }];
