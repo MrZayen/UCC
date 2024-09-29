@@ -7,7 +7,7 @@ const getImages = {
   extortion: "./images/ic_default.jpg",
   road: "",
   village: "./images/ic_default.jpg",
-  institute: ""
+  institute: "./images/ic_default.jpg"
 };
 const getTitle = {
   extortion: "গরু থেকে কালেকশন",
