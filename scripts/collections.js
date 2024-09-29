@@ -13,7 +13,7 @@ const getTitle = {
   extortion: "গরু থেকে কালেকশন",
   road: "",
   village: "পার্শ্ববর্তী এলাকা থেকে",
-  institute: ""
+  institute: "স্কুল থেকে কালেকশন"
 };
 const getBtnClasses = {
   system: "#",
@@ -175,6 +175,24 @@ const collections = [{
     getInformation: {getTitle: getTitle.village, getAmount: 800}
   }],
   getAmount: 2232
+},
+
+{
+  getId: "26092024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[4], getDate: "26 Sep, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getImage: getImages.extortion,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.extortion, getAmount: 500}
+  }],
+  getAmount: 500
+},
+
+{
+  
 }];
 
 
