@@ -183,7 +183,7 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[4], getDate: "26 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getClasses: [getBtnClasses.extortion, getBtnClasses.extortionIsShow, "remove"],
     getImage: getImages.extortion,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.extortion, getAmount: 500}
@@ -192,7 +192,17 @@ const collections = [{
 },
 
 {
-  
+  getId: "27092024",
+  getAvatar: getAvatar[5],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[0]},
+  getInformation: {getDay: getDay[5], getDate: "27 Sep, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.institute, getBtnClasses.instituteIsShow, "remove"],
+    getImage: getImages.institute,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.institute, getAmount: 1500}
+  }],
+  getAmount: 1500
 }];
 
 
