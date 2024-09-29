@@ -216,26 +216,17 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 800}
   },{
+    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getImage: getImages.village,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.village, getAmount: 300}
+  },{
     getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "ক্লাব ঘর থেকে ট্যাক্স", getAmount: 200}
   }],
-  getAmount: 1000
-},
-
-{
-  getId: "28092024",
-  getAvatar: getAvatar[6],
-  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
-  getInformation: {getDay: getDay[6], getDate: "28 Sep, 2024"},
-  getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
-    getImage: getImages.village,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: getTitle.village, getAmount: 300}
-  }],
-  getAmount: 300
+  getAmount: 1300
 },
 
 {
