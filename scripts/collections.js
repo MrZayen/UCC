@@ -246,6 +246,20 @@ const collections = [{
     getInformation: {getTitle: getTitle.road, getAmount: 830}
   }],
   getAmount: 1650 + 830
+},
+
+{
+  getId: "30092024",
+  getAvatar: getAvatar[1],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
+  getInformation: {getDay: getDay[1], getDate: "30 Sep, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.road, getAmount: 1000}
+  }],
+  getAmount: 1000
 }];
 
 
