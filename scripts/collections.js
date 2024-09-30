@@ -255,7 +255,7 @@ const collections = [{
   getInformation: {getDay: getDay[1], getDate: "30 Sep, 2024"},
   getCollections: [{
     getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 1000}
   }],
