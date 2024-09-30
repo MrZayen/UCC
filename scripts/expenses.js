@@ -342,6 +342,20 @@ const expenses = [{
     getInformation: {getTitle: "স্কুলের দোলনা টি তুলতে", getAmount: 300}
   }],
   getAmount: 300
+},
+
+{
+  getId: "29092024",
+  getAvatar: getAvatar[0],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[0], getDate: "29 Sep, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "ক্লাবের ফ্যান, বাল্ব, তার", getAmount: 1600}
+  }],
+  getAmount: 1600
 }];
 
 
