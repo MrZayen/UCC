@@ -235,12 +235,17 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: getDay[0], getDate: "29 Sep, 2024"},
   getCollections: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সিনিয়র কালেকশন", getAmount: 1650}
+  },{
     getClasses: [getBtnClasses.road, getBtnClasses.road, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 830}
   }],
-  getAmount: 830
+  getAmount: 1650 + 830
 }];
 
 
