@@ -238,7 +238,7 @@ const collections = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "সিনিয়র কালেকশন", getAmount: 1650}
+    getInformation: {getTitle: "আত্মীয়র বাড়ি থেকে", getAmount: 1650}
   },{
     getClasses: [getBtnClasses.road, getBtnClasses.road, "remove"],
     getImage: getImages.road,
