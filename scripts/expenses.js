@@ -323,7 +323,7 @@ const expenses = [{
     getInformation: {getTitle: "DG-সেট বায়না", getAmount: 500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
-    getImage: getImages.transportation,
+    getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "ব্যানারের ফ্রেম তৈরি", getAmount: 150}
   }],
