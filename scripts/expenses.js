@@ -318,7 +318,7 @@ const expenses = [{
   getInformation: {getDay: getDay[4], getDate: "26 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: "./images/ic_dg-set",
+    getImage: "./images/ic_dg-set.jpg",
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "DG-সেট বায়না", getAmount: 500}
   },{
