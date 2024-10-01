@@ -299,7 +299,7 @@ const expenses = [{
   getInformation: {getDay: getDay[3], getDate: "25 Sep, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: "./images/ic_orchestra-banner.jpg",
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "অর্কেস্ট্রা ব্যানার ২ টা", getAmount: 300}
   },{
