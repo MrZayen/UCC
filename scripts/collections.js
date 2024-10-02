@@ -7,12 +7,14 @@ const getImages = {
   extortion: "./images/ic_default.jpg",
   road: "./images/ic_default.jpg",
   village: "./images/ic_default.jpg",
+  relative: "./images/ic_default.jpg",
   institute: "./images/ic_default.jpg"
 };
 const getTitle = {
   extortion: "গরু থেকে কালেকশন",
   road: "রাস্তা থেকে কালেকশন",
   village: "পার্শ্ববর্তী এলাকা থেকে",
+  relative: "আত্মীয়র বাড়ি থেক",
   institute: "স্কুল থেকে কালেকশন"
 };
 const getBtnClasses = {
@@ -20,12 +22,14 @@ const getBtnClasses = {
   extortion: "#",
   road: "#",
   village: "#",
+  relative: "#",
   institute: "#",
   //Button Active Status 
   systemIsShow: "#",
   extortionIsShow: "#",
   roadIsShow: "#",
   villageIsShow: "#",
+  relativeIsShow: "#",
   instituteIsShow: "#"
 }; 
 
@@ -71,7 +75,7 @@ const collections = [{
   getInformation: {getDay: getDay[4], getDate: "12 Sep, 2024"},
   getCollections: [{
     getClasses: [getBtnClasses.extortion, getBtnClasses.extortionIsShow, "remove"],
-    getImage: getImages.system,
+    getImage: getImages.extortion,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.extortion, getAmount: 50}
   }],
@@ -94,7 +98,7 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 300}
   }],
-  getAmount: 1100
+  getAmount: 800 + 300
 },
 
 {
@@ -155,7 +159,7 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 900}
   }],
-  getAmount: 2170
+  getAmount: 1270 + 900
 },
 
 {
@@ -174,7 +178,7 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 800}
   }],
-  getAmount: 2232
+  getAmount: 1432 + 800
 },
 
 {
@@ -221,12 +225,12 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 300}
   },{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "ক্লাব ঘর থেকে ট্যাক্স", getAmount: 200}
   }],
-  getAmount: 1300
+  getAmount: 800 + 300 + 200
 },
 
 {
@@ -235,10 +239,10 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: getDay[0], getDate: "29 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getClasses: [getBtnClasses.relative, getBtnClasses.relativeIsShow, "#"],
+    getImage: getImages.relative,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "আত্মীয়র বাড়ি থেকে", getAmount: 1650}
+    getInformation: {getTitle: getTitle.relative, getAmount: 1650}
   },{
     getClasses: [getBtnClasses.road, getBtnClasses.road, "remove"],
     getImage: getImages.road,
