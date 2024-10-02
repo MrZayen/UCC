@@ -8,14 +8,16 @@ const getImages = {
   road: "./images/ic_default.jpg",
   village: "./images/ic_default.jpg",
   relative: "./images/ic_default.jpg",
-  institute: "./images/ic_default.jpg"
+  institute: "./images/ic_default.jpg",
+  market: "./images/ic_default.jpg"
 };
 const getTitle = {
   extortion: "গরু থেকে কালেকশন",
   road: "রাস্তা থেকে কালেকশন",
   village: "পার্শ্ববর্তী এলাকা থেকে",
   relative: "আত্মীয়র বাড়ি থেক",
-  institute: "স্কুল থেকে কালেকশন"
+  institute: "স্কুল থেকে কালেকশন",
+  market: "হাট / বাজার কালেকশন"
 };
 const getBtnClasses = {
   system: "#",
@@ -24,13 +26,15 @@ const getBtnClasses = {
   village: "#",
   relative: "#",
   institute: "#",
+  market: "#",
   //Button Active Status 
   systemIsShow: "#",
   extortionIsShow: "#",
   roadIsShow: "#",
   villageIsShow: "#",
   relativeIsShow: "#",
-  instituteIsShow: "#"
+  instituteIsShow: "#",
+  marketIsShow: "#"
 }; 
 
 
@@ -269,7 +273,7 @@ const collections = [{
 {
   getId: "01102024",
   getAvatar: getAvatar[2],
-  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[2], getDate: "1 Oct, 2024"},
   getCollections: [{
     getClasses: [getBtnClasses.institute, getBtnClasses.instituteIsShow, "#"],
@@ -288,6 +292,25 @@ const collections = [{
     getInformation: {getTitle: getTitle.road, getAmount: 900}
   }],
   getAmount: 2500 + 1590 + 900
+},
+
+{
+  getId: "02102024",
+  getAvatar: getAvatar[3],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[3], getDate: "2 Oct, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "#"],
+    getImage: getImages.road,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.road, getAmount: 2250}
+  },{
+    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "remove"],
+    getImage: getImages.market,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.market, getAmount: 1100}
+  }],
+  getAmount: 2250 + 1100
 }];
 
 
