@@ -308,7 +308,7 @@ const collections = [{
     getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "remove"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: getTitle.market, getAmount: 1100}
+    getInformation: {getTitle: "চ্যাংড়াবান্ধা বাজার থেকে", getAmount: 1100}
   }],
   getAmount: 2250 + 1100
 }];
