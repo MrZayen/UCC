@@ -311,6 +311,25 @@ const collections = [{
     getInformation: {getTitle: "চ্যাংড়াবান্ধা বাজার থেকে", getAmount: 1100}
   }],
   getAmount: 2250 + 1100
+},
+
+{
+  getId: "03102024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[0]},
+  getInformation: {getDay: getDay[4], getDate: "3 Oct, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "#"],
+    getImage: getImages.market,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "বাজার / মোর কালেকশন", getAmount: 1550}
+  },{
+    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getImage: getImages.road,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.road, getAmount: 700}
+  }],
+  getAmount: 1550 + 700
 }];
 
 
