@@ -387,7 +387,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "নতুন রশিদ বায়না", getAmount: 450}
+    getInformation: {getTitle: "নতুন রশিদ ছাপাতে", getAmount: 450}
   },{
     getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
     getImage: getImages.transportation,
