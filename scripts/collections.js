@@ -349,6 +349,30 @@ const collections = [{
     getInformation: {getTitle: getTitle.road, getAmount: 150}
   }],
   getAmount: 1330 + 150
+},
+
+{
+  getId: "05102024",
+  getAvatar: getAvatar[6],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
+  getInformation: {getDay: getDay[6], getDate: "5 Oct, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "#"],
+    getImage: getImages.market,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "হেলাপাকড়ি বাজার থেকে", getAmount: 1600}
+  },{
+    getClasses: [getBtnClasses.institute, getBtnClasses.instituteIsShow, "#"],
+    getImage: getImages.institute,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.institute, getAmount: 700}
+  },{
+    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getImage: getImages.road,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.road, getAmount: 150}
+  }],
+  getAmount: 1600 + 700 + 150
 }];
 
 
