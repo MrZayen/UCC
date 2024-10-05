@@ -376,6 +376,25 @@ const expenses = [{
     getInformation: {getTitle: "ক্লাবের ফ্যান, বাল্ব, তার", getAmount: 1600}
   }],
   getAmount: 1600
+},
+
+{
+  getId: "04102024",
+  getAvatar: getAvatar[5],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[5], getDate: "4 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "নতুন রশিদ বায়না", getAmount: 450}
+  },{
+    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
+    getImage: getImages.transportation,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.transportation, getAmount: 100}
+  }],
+  getAmount: 450 + 100
 }];
 
 
