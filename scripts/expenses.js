@@ -195,7 +195,7 @@ const expenses = [{
     getInformation: {getTitle: "বৈদ্যুতিক বিল", getAmount: 4550}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: "./images/ic_document.jpg",
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "জেরক্স, ফর্ম ও অন্যান্য", getAmount: 200}
   },{
