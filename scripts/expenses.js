@@ -14,7 +14,7 @@ const getImages = {
 const getTitle = {
   brahmin: "",
   dhak: "",
-  pandal: "পূজোর প্যান্ডেলের বাবদ",
+  pandal: "পূজার প্যান্ডেলের বাবদ",
   soundSystemOne: "",
   soundSystemTwo: "",
   transportation: "যাতায়াত খরচ"
