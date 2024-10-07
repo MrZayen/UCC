@@ -418,7 +418,7 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "দমকলের মিটিং যাতায়াত", getAmount: 70}
   },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "", getAmount: 50}
