@@ -14,7 +14,7 @@ const getImages = {
 const getTitle = {
   brahmin: "",
   dhak: "",
-  pandal: "",
+  pandal: "পূজোর প্যান্ডেলের বাবদ",
   soundSystemOne: "",
   soundSystemTwo: "",
   transportation: "যাতায়াত খরচ"
@@ -395,6 +395,35 @@ const expenses = [{
     getInformation: {getTitle: getTitle.transportation, getAmount: 100}
   }],
   getAmount: 450 + 100
+},
+
+{
+  getId: "06102024",
+  getAvatar: getAvatar[0],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[0], getDate: "6 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.pandal, getBtnClasses.pandalIsShow, "#"],
+    getImage: getImages.pandal,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.pandal, getAmount: 6000}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "চুন, নীল, ব্রাশ, ফেভিকল", getAmount: 400}
+  },{
+    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "#"],
+    getImage: getImages.transportation,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "দমকলের মিটিং যাতায়াত", getAmount: 70}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "", getAmount: 50}
+  }],
+  getAmount: 6000 + 400 + 70 + 50
 }];
 
 
