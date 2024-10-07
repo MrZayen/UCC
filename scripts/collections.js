@@ -389,7 +389,7 @@ const collections = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "", getAmount: 150}
+    getInformation: {getTitle: "ক্লাব প্রাঙ্গণ থেকে", getAmount: 150}
   }],
   getAmount: 880 + 150
 }];
