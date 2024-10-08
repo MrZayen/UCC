@@ -97,10 +97,10 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.extortion, getAmount: 800}
   },{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
-    getImage: getImages.village,
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: getTitle.village, getAmount: 300}
+    getInformation: {getTitle: "ভোটের বাড়ি থেকে", getAmount: 300}
   }],
   getAmount: 800 + 300
 },
