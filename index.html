@@ -220,6 +220,7 @@
       padding: 15px;
       box-sizing: border-box;
       display: flex;
+      align-items: center;
     }
     .card .header__logo {
       width: 50px;
@@ -250,6 +251,17 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+    .card .card__amount{
+      width: 75px;
+      padding: 10px 0px;
+      border-radius: 100px;
+      color: var(--backgroundColor);
+      background-color: #2FDF85;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 450;
     }
     .card__body {
       width: 100%;
@@ -674,6 +686,9 @@
                             <div class="header__description">
                               <span>${cardData.getInformation.getDate}</span>
                             </div>
+                          </div>
+                          <div class="card__amount">
+                              <span>₹${numberWithCommas(cardData.getAmount)}</span>
                           </div>
                         </div>
                         <div class="card__body">
