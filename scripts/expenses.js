@@ -424,6 +424,40 @@ const expenses = [{
     getInformation: {getTitle: "গাছ, রাস্তা রং করতে টিফিন", getAmount: 50}
   }],
   getAmount: 6000 + 400 + 70 + 50
+},
+
+{
+  getId: "07102024",
+  getAvatar: getAvatar[1],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
+  getInformation: {getDay: getDay[1], getDate: "7 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "কীটনাশক", getAmount: 120}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "দয়াল দার স্প্রেচার্জ", getAmount: 50}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পাড়ার জঙ্গল পরিষ্কার", getAmount: 100}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "ক্লাব ঘরের নতুন তালা", getAmount: 80}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "বিকৃত নোট (৫০০) বদলাতে", getAmount: 50}
+  }],
+  getAmount: 120 + 50 + 100 + 80 + 50
 }];
 
 
