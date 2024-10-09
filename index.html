@@ -597,6 +597,7 @@
 
     add("collections", collections);
     add("expenses", expenses)
+    setSubCardBackgroundColor()
     
     document.querySelectorAll(".remove").forEach((item)=>{
       item.remove();
@@ -734,6 +735,30 @@
         });
       }
     }
+    
+    
+    function setSubCardBackgroundColor() {
+      let card = document.querySelectorAll(".card");
+      
+      card.forEach((card) => {
+        let avatar = card.querySelector(".card .header__logo span");
+        let subCard = card.querySelectorAll(".sub-card__header");
+        
+        subCard.forEach((subCard) => {
+          let subCardBackgroundColor = window.getComputedStyle(avatar).backgroundColor;
+          subCardBackgroundColor = subCardBackgroundColor.replace('rgb', 'rgba').replace(')', ', 0.1)');
+          subCard.style.backgroundColor = subCardBackgroundColor;
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({ matches }) => {
+            if (matches) {
+              subCard.style.backgroundColor = "#252525";
+            } else {
+              subCard.style.backgroundColor = subCardBackgroundColor;
+            }
+          })
+        });
+        
+      });
+    };
     
     function numberWithCommas(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
