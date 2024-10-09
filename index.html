@@ -736,6 +736,26 @@
       }
     }
     
+    setMainCardBackgroundColor();
+    function setMainCardBackgroundColor(){
+      let mainCard = document.querySelectorAll(".main-card");
+      mainCard.forEach((mainCard) => {
+        let mainCardLogo = mainCard.querySelector(".main-card .total-amount__logo .logo");
+        let mainCardBackgroundColor = window.getComputedStyle(mainCardLogo).borderColor;
+        mainCardBackgroundColor = mainCardBackgroundColor.replace('rgb', 'rgba').replace(')', ', 0.1)');
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          mainCard.setAttribute("style", `--surfaceColor: ${mainCardBackgroundColor}`)
+        }
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            mainCard.setAttribute("style", `--surfaceColor: ${mainCardBackgroundColor}`)
+          }else {
+            mainCard.setAttribute("style", `--surfaceColor: #252525`)
+          }
+        });
+      });
+    };
     
     function setSubCardBackgroundColor() {
       let card = document.querySelectorAll(".card");
@@ -752,7 +772,6 @@
           }
          
          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-           console.log('changed!!');
            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
              subCard.setAttribute("style", `--surfaceColor: ${subCardBackgroundColor}`)
            }else {
@@ -771,4 +790,4 @@
   </script>
 
 </body>
-</html
+</html>
