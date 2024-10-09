@@ -747,14 +747,19 @@
         subCard.forEach((subCard) => {
           let subCardBackgroundColor = window.getComputedStyle(avatar).backgroundColor;
           subCardBackgroundColor = subCardBackgroundColor.replace('rgb', 'rgba').replace(')', ', 0.1)');
-          subCard.style.backgroundColor = subCardBackgroundColor;
-          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({ matches }) => {
-            if (matches) {
-              subCard.style.backgroundColor = "#252525";
-            } else {
-              subCard.style.backgroundColor = subCardBackgroundColor;
-            }
-          })
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            subCard.setAttribute("style", `--surfaceColor: ${subCardBackgroundColor}`)
+          }
+         
+         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+           console.log('changed!!');
+           if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+             subCard.setAttribute("style", `--surfaceColor: ${subCardBackgroundColor}`)
+           }else {
+             subCard.setAttribute("style", `--surfaceColor: #252525`)
+           }
+         });
+          
         });
         
       });
@@ -766,4 +771,4 @@
   </script>
 
 </body>
-</html>
+</html
