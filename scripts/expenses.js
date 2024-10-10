@@ -520,10 +520,10 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "...", getAmount: 150}
   },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "#"],
+    getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "...", getAmount: 130}
+    getInformation: {getTitle: getTitle.transportation, getAmount: 130}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
