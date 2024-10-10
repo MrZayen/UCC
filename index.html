@@ -252,6 +252,9 @@
       flex-direction: column;
       justify-content: center;
     }
+    .card .card__header .header__title{
+      margin-bottom: 2.5px;
+    }
     .card .card__amount{
       width: 75px;
       padding: 10px 0px;
@@ -308,6 +311,7 @@
       border-radius: 10px;
       background-color: var(--surfaceColor);
       display: flex;
+      align-items: center;
     }
     .sub-card__header__logo{
       width: 50px;
@@ -347,6 +351,20 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+    .sub-card__header__details .sub-card__header__title{
+      font-size: 15.5px;
+    }
+    .sub-card__header__details .sub-card__header__description{
+      font-weight: bold;
+    }
+    .sub-card__btn{
+      width: 22px;
+      height: 22px;
+      display: none;
+    }
+    .sub-card__btn.show{
+      display: block;
     }
     .sub-card__body{
       width: 100%;
@@ -636,6 +654,11 @@
           let subCard = document.createElement("div");
           subCard.classList.add("sub-card");
           
+          let subCardId;
+          if (subCardData.getId){
+            subCardId = subCardData.getId;
+          };
+          
           let subCardLogo;
           if(subCardData.getLogoInfo.getType === "img"){
             if(!subCardData.getLogoInfo.isPng){
@@ -649,15 +672,18 @@
             subCardLogo = `<div><video src="${subCardData.getVideo}" class="sub-card__header__video" autoplay muted loop></video></div>`;
           };
           
-          subCard.innerHTML = `<div class="sub-card__header">
+          subCard.innerHTML = `<div class="sub-card__header ${subCardData.getClasses[0]}" id="${subCardId}">
                                  <div class="sub-card__header__logo">${subCardLogo}</div>
                                  <div class="sub-card__header__details">
                                    <div class="sub-card__header__title">
                                      <span>${subCardData.getInformation.getTitle}</span>
                                    </div>
-                                   <div class="sub-card__header__title">
+                                   <div class="sub-card__header__description">
                                      <span>₹${numberWithCommas(subCardData.getInformation.getAmount)}</span>
                                    </div>
+                                 </div>
+                                 <div class="sub-card__btn ${subCardData.getClasses[1]}">
+                                     <svg xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24"><path d="M13.1,19.5a1.5,1.5,0,0,1-1.061-2.561l4.586-4.585a.5.5,0,0,0,0-.708L12.043,7.061a1.5,1.5,0,0,1,2.121-2.122L18.75,9.525a3.505,3.505,0,0,1,0,4.95l-4.586,4.586A1.5,1.5,0,0,1,13.1,19.5Z"/><path d="M6.1,19.5a1.5,1.5,0,0,1-1.061-2.561L9.982,12,5.043,7.061A1.5,1.5,0,0,1,7.164,4.939l6,6a1.5,1.5,0,0,1,0,2.122l-6,6A1.5,1.5,0,0,1,6.1,19.5Z"/></svg>
                                  </div>
                                </div>
                                <div class="sub-card__body ${subCardData.getClasses[2]}">
