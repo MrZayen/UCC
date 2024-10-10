@@ -465,7 +465,8 @@ const expenses = [{
   getAvatar: getAvatar[2],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[2], getDate: "8 Oct, 2024"},
-  getExpenses: [{getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "ধুতি, শাড়ি  ইত্যাদি", getAmount: 3470}
@@ -503,12 +504,33 @@ const expenses = [{
   getAvatar: getAvatar[3],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: getDay[3], getDate: "9 Oct, 2024"},
-  getExpenses: [{getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
+  getExpenses: [{
+    getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
     getImage: getImages.dhak,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.dhak, getAmount: 2500}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "...", getAmount: 820}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "...", getAmount: 150}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "...", getAmount: 130}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "...", getAmount: 120}
   }],
-  getAmount: 2500
+  getAmount: 2500 + 820 + 150 + 130 + 120
 }];
 
 
