@@ -473,17 +473,12 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পূজার ফলমুল, ডাব", getAmount: 1450}
+    getInformation: {getTitle: "ফলমূল, ডাব, পদ্ম", getAmount: 1650}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "সর্ষের তেল", getAmount: 950}
-  },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পূজার পদ্ম ফুল", getAmount: 200}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
@@ -500,7 +495,7 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 620}
   }],
-  getAmount: 3470 + 1450 + 950 + 200 + 150 + 200 + 620
+  getAmount: 3470 + 1650 + 950 + 150 + 200 + 620
 }];
 
 
