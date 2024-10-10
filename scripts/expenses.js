@@ -13,7 +13,7 @@ const getImages = {
 };
 const getTitle = {
   brahmin: "",
-  dhak: "",
+  dhak: "...",
   pandal: "পূজার প্যান্ডেলের বাবদ",
   soundSystemOne: "",
   soundSystemTwo: "",
@@ -496,52 +496,20 @@ const expenses = [{
     getInformation: {getTitle: getTitle.transportation, getAmount: 620}
   }],
   getAmount: 3470 + 1650 + 950 + 150 + 200 + 620
+},
+
+{
+  getId: "09102024",
+  getAvatar: getAvatar[3],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[3], getDate: "9 Oct, 2024"},
+  getExpenses: [{getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
+    getImage: getImages.dhak,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.dhak, getAmount: 2500}
+  }],
+  getAmount: 2500
 }];
 
 
 export default expenses;
-
-
-
-
-
-
-
-/*{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "ধুতি, শাড়ি  ইত্যাদি", getAmount: 3470}
-  },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পূজার ফলমুল, ডাব", getAmount: 1450}
-  },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "সর্ষের তেল", getAmount: 950}
-  },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পূজার পদ্ম ফুল", getAmount: 200}
-  },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পান সুপারি", getAmount: 150}
-  },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "কোষাধ্যক্ষের জন্য ব্যাগ", getAmount: 200}
-  },{
-    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
-    getImage: getImages.transportation,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: getTitle.transportation, getAmount: 620}
-  }],
-  getAmount 3470 + 1450 + 950 + 200 + 150 + 200 + 620
-}*/
