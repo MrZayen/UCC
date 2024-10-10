@@ -406,6 +406,20 @@ const collections = [{
     getInformation: {getTitle: "ভোটের বাড়ি থেকে", getAmount: 200}
   }],
   getAmount: 200
+},
+
+{
+  getId: "08102024",
+  getAvatar: getAvatar[2],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[2], getDate: "8 Oct, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getImage: getImages.road,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.road, getAmount: 390}
+  }],
+  getAmount: 390
 }];
 
 
