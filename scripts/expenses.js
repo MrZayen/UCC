@@ -458,6 +458,50 @@ const expenses = [{
     getInformation: {getTitle: "বিকৃত নোট (৫০০) বদলাতে", getAmount: 50}
   }],
   getAmount: 120 + 50 + 100 + 80 + 50
+},
+
+{
+  getId: "08102024",
+  getAvatar: getAvatar[2],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getInformation: {getDay: getDay[2], getDate: "8 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "ধুতি, শাড়ি  ইত্যাদি", getAmount: 3470}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পূজার ফলমুল, ডাব", getAmount: 1450}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সর্ষের তেল", getAmount: 950}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পূজার পদ্ম ফুল", getAmount: 200}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পান সুপারি", getAmount: 150}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "কোষাধ্যক্ষের জন্য ব্যাগ", getAmount: 200}
+  },{
+    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
+    getImage: getImages.transportation,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.transportation, getAmount: 620}
+  }],
+  getAmount 3470 + 1450 + 950 + 200 + 150 + 200 + 620
 }];
 
 
