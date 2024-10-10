@@ -414,10 +414,15 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[2], getDate: "8 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "#"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 390}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "মায়ের পূজার চাঁদা", getAmount: 200}
   }],
   getAmount: 390
 }];
