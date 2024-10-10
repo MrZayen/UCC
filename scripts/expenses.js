@@ -13,7 +13,7 @@ const getImages = {
 };
 const getTitle = {
   brahmin: "",
-  dhak: "...",
+  dhak: "পূজার ঢাকের বাবদ",
   pandal: "পূজার প্যান্ডেলের বাবদ",
   soundSystemOne: "",
   soundSystemTwo: "",
