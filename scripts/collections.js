@@ -424,7 +424,7 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "মায়ের পূজার চাঁদা", getAmount: 200}
   }],
-  getAmount: 390
+  getAmount: 390 + 200
 }];
 
 
