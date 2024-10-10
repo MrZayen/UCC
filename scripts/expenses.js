@@ -458,20 +458,6 @@ const expenses = [{
     getInformation: {getTitle: "বিকৃত নোট (৫০০) বদলাতে", getAmount: 50}
   }],
   getAmount: 120 + 50 + 100 + 80 + 50
-},
-
-{
-  getId: "08102024",
-  getAvatar: getAvatar[2],
-  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
-  getInformation: {getDay: getDay[2], getDate: "8 Oct, 2024"},
-  getExpenses: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "ধুতি, শাড়ি  ইত্যাদি", getAmount: 3470}
-  }],
-  getAmount 3470 + 1450 + 950 + 200 + 150 + 200 + 620
 }];
 
 
