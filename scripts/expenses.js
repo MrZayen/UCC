@@ -525,12 +525,17 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "...", getAmount: 130}
   },{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "...", getAmount: 120}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "...", getAmount: 200}
   }],
-  getAmount: 2500 + 820 + 150 + 130 + 120
+  getAmount: 2500 + 820 + 150 + 130 + 120 + 200
 }];
 
 
