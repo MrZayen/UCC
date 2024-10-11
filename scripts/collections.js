@@ -439,6 +439,20 @@ const collections = [{
     getInformation: {getTitle: "মায়ের পূজার চাঁদা", getAmount: 50}
   }],
   getAmount: 50
+},
+
+{
+  getId: "10102024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
+  getInformation: {getDay: getDay[4], getDate: "10 Oct, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সপ্তমীর মোট কালেকশন", getAmount: 4500}
+  }],
+  getAmount: 4500
 }];
 
 
