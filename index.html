@@ -620,11 +620,16 @@
     
     
     //
+    localStorage.setItem("collections", JSON.stringify(collections));
+    localStorage.setItem("expenses", JSON.stringify(expenses));
+    
     let subCard = document.querySelectorAll(".subCard");
     subCard.forEach((subCard) => {
       subCard.addEventListener("click", ()=>{
-        localStorage.setItem("clickedSubCardId", subCard.id);
-        window.open("./pages/details-page.html");
+        if (subCard.id !== "undefined"){
+          localStorage.setItem("clickedSubCardId", `${subCard.id}`);
+          window.open("./pages/details-page.html");
+        };
       });
     });
     //
