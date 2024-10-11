@@ -433,8 +433,7 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
   getInformation: {getDay: getDay[3], getDate: "9 Oct, 2024"},
   getCollections: [{
-    getId: "market",
-    getClasses: ["subCard", "show", "remove"],
+    getClasses: [getClasses.system, getClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "মায়ের পূজার চাঁদা", getAmount: 50}
