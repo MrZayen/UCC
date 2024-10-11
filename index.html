@@ -401,7 +401,7 @@
       top: 0;
       z-index: 101;
       opacity: 0.8;
-      pointer-events: none;
+      pointer-events: ;
       
     }
     
@@ -661,9 +661,9 @@
       });
     });
     
-    document.querySelector(".activity_details").addEventListener("scroll", ()=>{
-      document.write("Hello...")
-    })
+    document.querySelector(".activity_details").addEventListener("scroll", (e)=>{
+      e.preventDefault()
+    }, {passive: false})
     //
     
     document.querySelectorAll(".remove").forEach((item)=>{
