@@ -566,7 +566,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "টিফিন বাটি এবং খাতা", getAmount: 3635}
+    getInformation: {getTitle: "টিফিন বাটি এবং খাতা", getAmount: 3645}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
@@ -583,7 +583,7 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "সদস্য / পুলিশ টিফিন", getAmount: 430}
   }],
-  getAmount: 3665 + 290 + 150 + 430
+  getAmount: 3645 + 290 + 150 + 430
 }];
 
 
