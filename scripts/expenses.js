@@ -598,8 +598,8 @@ const expenses = [{
     getInformation: {getTitle: getTitle.dhak, getAmount: 6000}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
-    getLogoInfo: {getType: "img", isPng: false},
+    getVideo: "./videos/ic_orchestra.mp4",
+    getLogoInfo: {getType: "vid", isPng: false},
     getInformation: {getTitle: "অর্কেস্ট্রার বাবদ", getAmount: 4500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
