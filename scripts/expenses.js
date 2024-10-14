@@ -503,7 +503,7 @@ const expenses = [{
   getId: "09102024",
   getAvatar: getAvatar[3],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
-  getInformation: {getDay: getDay[3], getDate: "9 Oct, 2024"},
+  getInformation: {getDay: "দুর্গাষষ্ঠী", getDate: "9 Oct, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
     getImage: getImages.dhak,
@@ -542,7 +542,7 @@ const expenses = [{
   getId: "10102024",
   getAvatar: getAvatar[4],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
-  getInformation: {getDay: getDay[4], getDate: "10 Oct, 2024"},
+  getInformation: {getDay: "দুর্গাসপ্তমী", getDate: "10 Oct, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
@@ -561,7 +561,7 @@ const expenses = [{
   getId: "11102024",
   getAvatar: getAvatar[5],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
-  getInformation: {getDay: getDay[5], getDate: "11 Oct, 2024"},
+  getInformation: {getDay: "মহানবমী", getDate: "11 Oct, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
@@ -590,7 +590,7 @@ const expenses = [{
   getId: "12102024",
   getAvatar: getAvatar[6],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
-  getInformation: {getDay: getDay[6], getDate: "12 Oct, 2024"},
+  getInformation: {getDay: "বিজয়াদশমী", getDate: "12 Oct, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.dhakIsShow, getBtnClasses.dhakIsShow, "#"],
     getImage: getImages.dhak,
@@ -634,7 +634,7 @@ const expenses = [{
   getId: "13102024",
   getAvatar: getAvatar[0],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
-  getInformation: {getDay: getDay[0], getDate: "13 Oct, 2024"},
+  getInformation: {getDay: "বিসর্জন", getDate: "13 Oct, 2024"},
   getExpenses: [{
     getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
     getImage: getImages.dhak,
