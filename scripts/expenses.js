@@ -659,7 +659,7 @@ const expenses = [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "অন্নান্য খরচ", getAmount: 800}
+    getInformation: {getTitle: "বিসর্জনের অন্নান্য খরচ", getAmount: 800}
   }],
   getAmount: 5500 + 2350 + 500 + 250 + 800
 }];
