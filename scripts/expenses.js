@@ -584,6 +584,50 @@ const expenses = [{
     getInformation: {getTitle: "সদস্য / পুলিশ টিফিন", getAmount: 430}
   }],
   getAmount: 3645 + 290 + 150 + 430
+},
+
+{
+  getId: "12102024",
+  getAvatar: getAvatar[6],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
+  getInformation: {getDay: getDay[6], getDate: "12 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.dhakIsShow, getBtnClasses.dhakIsShow, "#"],
+    getImage: getImages.dhak,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.dhak, getAmount: 6000}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "অর্কেস্ট্রার বাবদ", getAmount: 4500}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "DG Set-এর তেল", getAmount: 3220}
+  },{
+    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "#"],
+    getImage: getImages.transportation,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.transportation, getAmount: 100}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পূজার জন্য খরচ", getAmount: 100}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পুলিশ প্রশাসনের টিফিন", getAmount: 1000}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "জল এবং জিলাপি", getAmount: 600}
+  }],
+  getAmount: 6000 + 4500 + 3220 + 100 + 100 + 1000 + 600
 }];
 
 
