@@ -459,7 +459,7 @@ const collections = [{
   getId: "11102024",
   getAvatar: getAvatar[5],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
-  getInformation: {getDay: "মহাষ্টমী ও মহানবমী", getDate: "11 Oct, 2024"},
+  getInformation: {getDay: "মহানবমী", getDate: "11 Oct, 2024"},
   getCollections: [{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getImage: getImages.system,
