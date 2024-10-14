@@ -628,6 +628,40 @@ const expenses = [{
     getInformation: {getTitle: "জলের বোতল ও জিলাপি", getAmount: 600}
   }],
   getAmount: 6000 + 4500 + 3220 + 100 + 100 + 1000 + 600
+},
+
+{
+  getId: "13102024",
+  getAvatar: getAvatar[0],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
+  getInformation: {getDay: getDay[0], getDate: "13 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
+    getImage: getImages.dhak,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.dhak, getAmount: 5500}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "আতশবাজি এবং আবির", getAmount: 2350}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "জেনারেটর-এর তেল", getAmount: 500}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সাউন্ড সিস্টেম পৌঁছে দিতে", getAmount: 250}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "অন্নান্য খরচ", getAmount: 800}
+  }],
+  getAmount: 5500 + 2350 + 500 + 250 + 800
 }];
 
 
