@@ -599,7 +599,7 @@ const expenses = [{
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
     getVideo: "./videos/ic_orchestra.mp4",
-    getLogoInfo: {getType: "vid", isPng: false},
+    getLogoInfo: {getType: "vid"},
     getInformation: {getTitle: "অর্কেস্ট্রার বাবদ", getAmount: 4500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
