@@ -429,7 +429,7 @@ const collections = [{
 
 {
   getId: "09102024",
-  getAvatar: getAvatar[3],
+  getAvatar: "দুর্গাষষ্ঠী",
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
   getInformation: {getDay: getDay[3], getDate: "9 Oct, 2024"},
   getCollections: [{
@@ -443,7 +443,7 @@ const collections = [{
 
 {
   getId: "10102024",
-  getAvatar: getAvatar[4],
+  getAvatar: "দুর্গাসপ্তমী",
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[4], getDate: "10 Oct, 2024"},
   getCollections: [{
@@ -457,7 +457,7 @@ const collections = [{
 
 {
   getId: "11102024",
-  getAvatar: getAvatar[5],
+  getAvatar: "মহাষ্টমী ও মহানবমী",
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: getDay[5], getDate: "11 Oct, 2024"},
   getCollections: [{
@@ -476,7 +476,7 @@ const collections = [{
 
 {
   getId: "12102024",
-  getAvatar: getAvatar[6],
+  getAvatar: "বিজয়াদশমী",
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[6], getDate: "12 Oct, 2024"},
   getCollections: [{
