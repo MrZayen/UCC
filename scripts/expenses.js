@@ -555,6 +555,35 @@ const expenses = [{
     getInformation: {getTitle: "রাতের খাবার ( Staff )", getAmount: 130}
   }],
   getAmount: 700 + 130
+},
+
+{
+  getId: "11102024",
+  getAvatar: getAvatar[5],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
+  getInformation: {getDay: getDay[5], getDate: "11 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "টিফিন বাটি এবং খাতা", getAmount: 3635}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সুই, সুতো, বেলুন, মোমবাতি", getAmount: 290}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পূজার জন্য খরচ", getAmount: 150}
+  },{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সদস্য / পুলিশ টিফিন", getAmount: 430}
+  }],
+  getAmount: 3665 + 290 + 150 + 430
 }];
 
 
