@@ -472,6 +472,25 @@ const collections = [{
     getInformation: {getTitle: "পাকড়িতলা বাজার থেকে", getAmount: 1100}
   }],
   getAmount: 11121 + 1100
+},
+
+{
+  getId: "12102024",
+  getAvatar: getAvatar[6],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getInformation: {getDay: getDay[6], getDate: "12 Oct, 2024"},
+  getCollections: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "দশমীর মোট কালেকশন", getAmount: 7360}
+  },{
+    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "remove"],
+    getImage: getImages.market,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "মেলার দোকান থেকে", getAmount: 6400}
+  }],
+  getAmount: 7360 + 6400
 }];
 
 
