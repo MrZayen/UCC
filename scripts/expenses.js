@@ -603,7 +603,7 @@ const expenses = [{
     getInformation: {getTitle: "অর্কেস্ট্রার বাবদ", getAmount: 4500}
   },{
     getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
-    getImage: getImages.system,
+    getImage: "./images/ic_dg-set.jpg",
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "DG Set-এর তেল", getAmount: 3220}
   },{
