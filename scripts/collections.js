@@ -41,11 +41,11 @@ const getSubCardClasses = {
   default: "#",
   clicked: "subCard"
 };
-/*const getSubCardBtnClasses = {
+const getSubCardBtnClasses = {
   default: "#",
   clicked: "show"
 };
-const getSubCardId = {
+/*const getSubCardId = {
   
 };*/
 
