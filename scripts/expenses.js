@@ -503,7 +503,8 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: "দুর্গাষষ্ঠী", getDate: "9 Oct, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.dhak, getBtnClasses.dhakIsShow, "#"],
+    getId: getSubCardId.dhak,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.dhak,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.dhak, getAmount: 2500}
