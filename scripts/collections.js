@@ -48,6 +48,7 @@ const getSubCardBtnClasses = {
 const getSubCardId = {
   default: "subCard",
   extortion: "extortion",
+  road: "road",
   village: "village"
 };
 
@@ -274,7 +275,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.relative, getAmount: 1650}
   },{
-    getClasses: [getBtnClasses.road, getBtnClasses.road, "remove"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 830}
@@ -288,7 +290,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
   getInformation: {getDay: getDay[1], getDate: "30 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 1000}
@@ -312,7 +315,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.relative, getAmount: 1590}
   },{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 900}
@@ -326,7 +330,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[3], getDate: "2 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "#"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 2250}
@@ -350,7 +355,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "বাজার / মোর কালেকশন", getAmount: 1550}
   },{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 700}
@@ -369,7 +375,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "মেখলিগঞ্জ বাজার থেকে", getAmount: 1330}
   },{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 150}
@@ -393,7 +400,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.institute, getAmount: 700}
   },{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "remove"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 150}
@@ -440,7 +448,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[2], getDate: "8 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.road, getBtnClasses.roadIsShow, "#"],
+    getId: getSubCardId.road,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.road,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 390}
