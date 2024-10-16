@@ -48,7 +48,8 @@ const getSubCardBtnClasses = {
 const getSubCardId = {
   default: "subCard",
   dhak: "dhak",
-  pandal: "pandal"
+  pandal: "pandal",
+  receipt: "receipt"
 };
 
 
@@ -59,12 +60,14 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[1], getDate: "2 Sep, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getId: getSubCardId.receipt,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার রশিদ বায়না", getAmount: 500}
   },{
-    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
+    getId: getSubCardId.receipt,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 100}
@@ -78,12 +81,14 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
   getInformation: {getDay: getDay[4], getDate: "5 Sep, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getId: getSubCardId.receipt,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "রশিদের অবশিষ্ট টাকা", getAmount: 3970}
   },{
-    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
+    getId: getSubCardId.receipt,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 230}
@@ -384,12 +389,14 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[5], getDate: "4 Oct, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "#"],
+    getId: getSubCardId.receipt,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "নতুন রশিদ ছাপাতে", getAmount: 450}
   },{
-    getClasses: [getBtnClasses.transportation, getBtnClasses.transportationIsShow, "remove"],
+    getId: getSubCardId.receipt,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.transportation,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 100}
