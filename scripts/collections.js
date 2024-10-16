@@ -37,11 +37,11 @@ const getBtnClasses = {
   marketIsShow: "#"
 };
 
-/*const getSubCardClasses = {
+const getSubCardClasses = {
   default: "#",
   clicked: "subCard"
 };
-const getSubCardBtnClasses = {
+/*const getSubCardBtnClasses = {
   default: "#",
   clicked: "show"
 };
