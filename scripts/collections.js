@@ -35,7 +35,18 @@ const getBtnClasses = {
   relativeIsShow: "#",
   instituteIsShow: "#",
   marketIsShow: "#"
-}; 
+};
+const getSubCardClasses = {
+  default: "#",
+  clicked: "subCard"
+}:
+const getSubCardBtnClasses = {
+  default: "#",
+  clicked: "show"
+}:
+const getSubCardId = {
+  
+};
 
 
 //Template
