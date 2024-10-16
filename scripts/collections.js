@@ -44,9 +44,9 @@ const getSubCardBtnClasses = {
   default: "#",
   clicked: "show"
 }:
-const getSubCardId = {
+/*const getSubCardId = {
   
-};
+};*/
 
 
 //Template
