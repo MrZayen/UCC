@@ -423,14 +423,27 @@
       width: 100%;
       height: 60px;
       padding: 15px;
+      padding-right: 20px;
       box-sizing: border-box;
       background-color: var(--backgroundColor);
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
     .activity_details .nav-btn{
       width: 25px;
       height: 25px;
+    }
+    .activity_details .nav-bar__amount{
+      width: 78px;
+      padding: 10px 0px;
+      border-radius: 100px;
+      color: var(--backgroundColor);
+      background-color: var(--color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 450;
     }
     .activity_details main{
       width: 100%;
@@ -623,6 +636,7 @@
         <div class="nav-btn">
           <svg xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24"><path d="M17.921,1.505a1.5,1.5,0,0,1-.44,1.06L9.809,10.237a2.5,2.5,0,0,0,0,3.536l7.662,7.662a1.5,1.5,0,0,1-2.121,2.121L7.688,15.9a5.506,5.506,0,0,1,0-7.779L15.36.444a1.5,1.5,0,0,1,2.561,1.061Z"/></svg>
         </div>
+        <div class="nav-bar__amount">85,000</div>
       </div>
     </header>
     <main>
@@ -929,6 +943,7 @@
     };
     
     function createDetailsCard(cardData){
+      let totalAmount = 0;
       cardData.forEach((cardData) => {
         let subCardData;
         if(cardData.getCollections){
@@ -941,6 +956,7 @@
         
         subCardData.forEach((subCardData) => {
           if (subCardData.getId === localStorage.getItem("clickedSubCardId")) {
+            totalAmount+=subCardData.getInformation.getAmount;
             let subCardTitle;
             if (subCardData.getTitle) {
               subCardTitle = subCardData.getTitle;
@@ -976,6 +992,7 @@
         
         document.querySelector(".default-card").insertAdjacentHTML("beforeEnd", card);
       });
+      document.querySelector(".activity_details .nav-bar__amount").innerText = `₹${numberWithCommas(totalAmount)}`;
     };
     
     function setMainCardBackgroundColor(){
