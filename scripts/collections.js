@@ -207,7 +207,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[4], getDate: "26 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.extortion, getBtnClasses.extortionIsShow, "remove"],
+    getId: getSubCardId.extortion,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.extortion,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.extortion, getAmount: 500}
