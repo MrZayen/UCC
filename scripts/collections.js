@@ -48,6 +48,7 @@ const getSubCardBtnClasses = {
 const getSubCardId = {
   default: "subCard",
   extortion: "extortion",
+  institute: "institute",
   road: "road",
   village: "village"
 };
@@ -230,7 +231,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[0]},
   getInformation: {getDay: getDay[5], getDate: "27 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.institute, getBtnClasses.instituteIsShow, "remove"],
+    getId: getSubCardId.institute,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.institute,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.institute, getAmount: 1500}
@@ -305,7 +307,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[2], getDate: "1 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.institute, getBtnClasses.instituteIsShow, "#"],
+    getId: getSubCardId.institute,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.institute,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.institute, getAmount: 2500}
@@ -395,10 +398,17 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "হেলাপাকড়ি বাজার থেকে", getAmount: 1600}
   },{
-    getClasses: [getBtnClasses.institute, getBtnClasses.instituteIsShow, "#"],
+    getId: getSubCardId.institute,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.institute,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: getTitle.institute, getAmount: 700}
+    getInformation: {getTitle: getTitle.institute, getAmount: 450}
+  },{
+    getId: getSubCardId.institute,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
+    getImage: getImages.institute,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.institute, getAmount: 250}
   },{
     getId: getSubCardId.road,
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
