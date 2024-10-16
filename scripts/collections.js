@@ -232,6 +232,7 @@ const collections = [{
   getInformation: {getDay: getDay[5], getDate: "27 Sep, 2024"},
   getCollections: [{
     getId: getSubCardId.institute,
+    getTitle: "উওর নিজতরফ এ.পি. বিদ্যালয়",
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.institute,
     getLogoInfo: {getType: "img", isPng: false},
