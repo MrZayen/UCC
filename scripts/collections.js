@@ -49,6 +49,7 @@ const getSubCardId = {
   default: "subCard",
   extortion: "extortion",
   institute: "institute",
+  market: "market",
   road: "road",
   village: "village"
 };
@@ -341,7 +342,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.road, getAmount: 2250}
   },{
-    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "remove"],
+    getId: getSubCardId.market,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "চ্যাংড়াবান্ধা বাজার থেকে", getAmount: 1100}
@@ -355,7 +357,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[0]},
   getInformation: {getDay: getDay[4], getDate: "3 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "#"],
+    getId: getSubCardId.market,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "বাজার / মোর কালেকশন", getAmount: 1550}
