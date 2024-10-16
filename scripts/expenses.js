@@ -673,6 +673,20 @@ const expenses = [{
     getInformation: {getTitle: "বিসর্জনের অন্নান্য খরচ", getAmount: 800}
   }],
   getAmount: 5500 + 2350 + 500 + 250 + 800
+},
+
+{
+  getId: "16102024",
+  getAvatar: getAvatar[3],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
+  getInformation: {getDay: getDay[3], getDate: "16 Oct, 2024"},
+  getExpenses: [{
+    getClasses: [getBtnClasses.system, getBtnClasses.systemIsShow, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "মেলার মাঠ পরিস্কার", getAmount: 500}
+  }],
+  getAmount: 500
 }];
 
 
