@@ -36,7 +36,8 @@ const getBtnClasses = {
   instituteIsShow: "#",
   marketIsShow: "#"
 };
-const getSubCardClasses = {
+
+/*const getSubCardClasses = {
   default: "#",
   clicked: "subCard"
 };
@@ -46,7 +47,7 @@ const getSubCardBtnClasses = {
 };
 const getSubCardId = {
   
-};
+};*/
 
 
 //Template
