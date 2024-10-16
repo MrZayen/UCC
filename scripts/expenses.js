@@ -47,7 +47,8 @@ const getSubCardBtnClasses = {
 };
 const getSubCardId = {
   default: "subCard",
-  dhak: "dhak"
+  dhak: "dhak",
+  pandal: "pandal"
 };
 
 
@@ -111,7 +112,8 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[0]},
   getInformation: {getDay: getDay[6], getDate: "7 Sep, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.pandal, getBtnClasses.pandalIsShow, "remove"],
+    getId: getSubCardId.pandal,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.pandal,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার প্যান্ডেল বায়না", getAmount: 500}
@@ -401,7 +403,8 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[3]},
   getInformation: {getDay: getDay[0], getDate: "6 Oct, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.pandal, getBtnClasses.pandalIsShow, "#"],
+    getId: getSubCardId.pandal,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.pandal,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.pandal, getAmount: 6000}
