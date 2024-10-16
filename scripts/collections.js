@@ -378,7 +378,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[5], getDate: "4 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "#"],
+    getId: getSubCardId.market,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "মেখলিগঞ্জ বাজার থেকে", getAmount: 1330}
@@ -398,7 +399,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
   getInformation: {getDay: getDay[6], getDate: "5 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "#"],
+    getId: getSubCardId.market,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "হেলাপাকড়ি বাজার থেকে", getAmount: 1600}
@@ -430,7 +432,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: getDay[0], getDate: "6 Oct, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "#"],
+    getId: getSubCardId.market,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "হলদিবাড়ি বাজার থেকে", getAmount: 880}
@@ -516,7 +519,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "নবমীর মোট কালেকশন", getAmount: 11121}
   },{
-    getClasses: [getBtnClasses.market, getBtnClasses.marketIsShow, "remove"],
+    getId: getSubCardId.market,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.market,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পাকড়িতলা বাজার থেকে", getAmount: 1100}
