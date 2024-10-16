@@ -46,7 +46,8 @@ const getSubCardBtnClasses = {
   clicked: "show"
 };
 const getSubCardId = {
-  default: "subCard"
+  default: "subCard",
+  extortion: "extortion"
 };
 
 
@@ -90,7 +91,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[4], getDate: "12 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.extortion, getBtnClasses.extortionIsShow, "remove"],
+    getId: getSubCardId.extortion,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.extortion,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.extortion, getAmount: 50}
