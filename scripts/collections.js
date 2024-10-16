@@ -274,7 +274,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[6]},
   getInformation: {getDay: getDay[0], getDate: "29 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.relative, getBtnClasses.relativeIsShow, "#"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.relative,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.relative, getAmount: 1650}
@@ -316,7 +317,8 @@ const collections = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.institute, getAmount: 2500}
   },{
-    getClasses: [getBtnClasses.relative, getBtnClasses.relativeIsShow, "#"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.relative,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.relative, getAmount: 1590}
