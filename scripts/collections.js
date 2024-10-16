@@ -47,7 +47,8 @@ const getSubCardBtnClasses = {
 };
 const getSubCardId = {
   default: "subCard",
-  extortion: "extortion"
+  extortion: "extortion",
+  village: "village"
 };
 
 
@@ -141,7 +142,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[5], getDate: "20 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 240}
@@ -155,7 +157,8 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[2]},
   getInformation: {getDay: getDay[6], getDate: "21 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 650}
@@ -169,12 +172,14 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[0], getDate: "22 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 1270}
   },{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 900}
@@ -188,12 +193,14 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[5]},
   getInformation: {getDay: getDay[1], getDate: "23 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked,, "#"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 1432}
   },{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "remove"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 800}
@@ -236,12 +243,14 @@ const collections = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[6], getDate: "28 Sep, 2024"},
   getCollections: [{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 800}
   },{
-    getClasses: [getBtnClasses.village, getBtnClasses.villageIsShow, "#"],
+    getId: getSubCardId.village,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.village,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.village, getAmount: 300}
