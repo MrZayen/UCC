@@ -750,9 +750,9 @@ const expenses = [{
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.default, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পিকনিকের বাবদ", getAmount: 11200}
+    getInformation: {getTitle: "পিকনিকের বাবদ", getAmount: 11150}
   }],
-  getAmount: 4500 + 2000 + 11200
+  getAmount: 4500 + 2000 + 11150
 }];
 
 
