@@ -706,7 +706,7 @@ const expenses = [{
     getImage: getImages.pandal,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.pandal, getAmount: 38000}
-  },{
+  }/*,{
     getId: getSubCardId.soundSystemTwo,
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.system,
@@ -736,7 +736,7 @@ const expenses = [{
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার খরচার বকেয়া", getAmount: 2000}
-  },{
+  }*/,{
     getId: getSubCardId.default,
     getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "remove"],
     getImage: getImages.system,
