@@ -730,13 +730,13 @@ const expenses = [{
     getImage: getImages.brahmin,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার পুরোহিত", getAmount: 4500}
-  },{
+  }*/,{
     getId: getSubCardId.default,
     getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার খরচার বকেয়া", getAmount: 2000}
-  }*/,{
+  },{
     getId: getSubCardId.default,
     getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "remove"],
     getImage: getImages.system,
