@@ -733,26 +733,26 @@ const expenses = [{
   getAvatar: getAvatar[4],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
   getInformation: {getDay: getDay[4], getDate: "17 Oct, 2024"},
-  getBtnClasses: [{
+  getExpenses: [{
     getId: getSubCardId.brahmin,
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.brahmin,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পূজার পুরোহিত", getAmount: 4500}
+    getInformation: {getTitle: "পূজার পুরোহিতের বাবদ", getAmount: 4500}
   },{
     getId: getSubCardId.default,
-    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "#"],
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.default, "#"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার খরচার বকেয়া", getAmount: 2000}
   },{
     getId: getSubCardId.default,
-    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "remove"],
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.default, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
-    getInformation: {getTitle: "পিকনিকের বাবদ", getAmount: 11150}
+    getInformation: {getTitle: "পিকনিকের বাবদ", getAmount: 11200}
   }],
-  getAmount: 4500 + 2000 + 11150
+  getAmount: 4500 + 2000 + 11200
 }];
 
 
