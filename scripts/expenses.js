@@ -720,11 +720,20 @@ const expenses = [{
     getInformation: {getTitle: "সাউন্ড সিস্টেম (১)", getAmount: 11000}
   },{
     getId: getSubCardId.default,
-    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "#"],
+    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "remove"],
     getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "মঞ্চ সজ্জার জন্য", getAmount: 2000}
-  },{
+  }],
+  getAmount: 38000 + 14000 + 11000 + 2000
+},
+
+{
+  getId: "17102024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
+  getInformation: {getDay: getDay[4], getDate: "17 Oct, 2024"},
+  getBtnClasses: [{
     getId: getSubCardId.brahmin,
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.brahmin,
@@ -743,7 +752,7 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পিকনিকের বাবদ", getAmount: 11150}
   }],
-  getAmount: 38000 + 14000 + 11000 + 2000 + 4500 + 2000 + 11150
+  getAmount: 4500 + 2000 + 11150
 }];
 
 
