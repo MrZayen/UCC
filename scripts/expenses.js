@@ -699,7 +699,7 @@ const expenses = [{
   getId: "17102024",
   getAvatar: getAvatar[4],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
-  getInformation: {getDay: getDay[4], getDate: "17 Oct, 2024"},
+  getInformation: {getDay: "পিকনিক", getDate: "17 Oct, 2024"},
   getExpenses: [{
     getId: getSubCardId.pandal,
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
@@ -732,7 +732,7 @@ const expenses = [{
   getId: "17102024",
   getAvatar: getAvatar[4],
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
-  getInformation: {getDay: getDay[4], getDate: "17 Oct, 2024"},
+  getInformation: {getDay: "পিকনিক", getDate: "17 Oct, 2024"},
   getExpenses: [{
     getId: getSubCardId.brahmin,
     getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
