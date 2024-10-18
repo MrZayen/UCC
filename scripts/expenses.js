@@ -47,9 +47,12 @@ const getSubCardBtnClasses = {
 };
 const getSubCardId = {
   default: "subCard",
+  brahmin: "brahmin",
   dhak: "dhak",
   pandal: "pandal",
-  receipt: "receipt"
+  receipt: "receipt",
+  soundSystemOne: "soundSystemOne",
+  soundSystemTwo: "soundSystemTwo"
 };
 
 
@@ -151,7 +154,8 @@ const expenses = [{
   getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[4]},
   getInformation: {getDay: getDay[3], getDate: "11 Sep, 2024"},
   getExpenses: [{
-    getClasses: [getBtnClasses.brahmin, getBtnClasses.brahminIsShow, "remove"],
+    getId: getSubCardId.brahmin,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
     getImage: getImages.brahmin,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "পূজার পুরোহিত বায়না", getAmount: 200}
@@ -175,8 +179,9 @@ const expenses = [{
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: getTitle.transportation, getAmount: 150}
   },{
-    getClasses: [getBtnClasses.soundSystemOne, getBtnClasses.soundSystemOneIsShow, "#"],
-    getImage: getImages.soundSystemOne,
+    getId: getSubCardId.soundSystemOne,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
+    getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "সাউন্ড সিস্টেম (১) বায়না", getAmount: 500}
   },{
@@ -281,8 +286,9 @@ const expenses = [{
     getInformation: {getTitle: "থানা থেকে চেক আনতে", getAmount: 200}
   },
   {
-    getClasses: [getBtnClasses.soundSystemTwo, getBtnClasses.soundSystemTwoIsShow, "remove"],
-    getImage: getImages.soundSystemTwo,
+    getId: getSubCardId.soundSystemTwo,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "remove"],
+    getImage: getImages.system,
     getLogoInfo: {getType: "img", isPng: false},
     getInformation: {getTitle: "সাউন্ড সিস্টেম (২) বায়না", getAmount: 100}
   }],
@@ -687,6 +693,57 @@ const expenses = [{
     getInformation: {getTitle: "মেলার মাঠ পরিস্কার", getAmount: 500}
   }],
   getAmount: 500
+},
+
+{
+  getId: "17102024",
+  getAvatar: getAvatar[4],
+  getLogoInfo: {getType: "txt", getAvatarColor: getAvatarColor[1]},
+  getInformation: {getDay: getDay[4], getDate: "17 Oct, 2024"},
+  getExpenses: [{
+    getId: getSubCardId.pandal,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
+    getImage: getImages.pandal,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: getTitle.pandal, getAmount: 38000}
+  },{
+    getId: getSubCardId.soundSystemTwo,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সাউন্ড সিস্টেম (২)", getAmount: 14000}
+  },{
+    getId: getSubCardId.soundSystemOne,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "সাউন্ড সিস্টেম (১)", getAmount: 11000}
+  },{
+    getId: getSubCardId.default,
+    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "মঞ্চ সজ্জার জন্য", getAmount: 2000}
+  }{
+    getId: getSubCardId.brahmin,
+    getClasses: [getSubCardClasses.clicked, getSubCardBtnClasses.clicked, "#"],
+    getImage: getImages.brahmin,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পূজার পুরোহিত", getAmount: 4500}
+  },{
+    getId: getSubCardId.default,
+    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "#"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পূজার খরচার বকেয়া", getAmount: 2000}
+  },{
+    getId: getSubCardId.default,
+    getClasses: [getSubCardClasses.default, getSubCardBtnClasses.default, "remove"],
+    getImage: getImages.system,
+    getLogoInfo: {getType: "img", isPng: false},
+    getInformation: {getTitle: "পিকনিকের বাবদ", getAmount: 11150}
+  }],
+  getAmount: 38000 + 14000 + 11000 + 2000 + 4500 + 2000 + 11150
 }];
 
 
